@@ -3,6 +3,9 @@ body{
     font-size: 14pt;
     color: aliceblue;
     background: black;
+    font-family: trajan-pro-3, serif;
+    font-style: normal;
+    font-weight: 600;
 }
 
 
@@ -18,12 +21,21 @@ body{
 .container{
     width: 90%;
     position: fixed;
-    margin: 0px 0px 0px 5%;
+    margin: 0px 5% 0px 5%;
 }
 
 .logo{
     float: left;
-    margin: 15px 15px 0px 0px;
+    margin: 5px 15px 0px 0px;
+    font-family: trajan-pro-3, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo img{
+    width: 45px;
+    margin-bottom: -15px;
 }
 
 .search-bar{
@@ -75,7 +87,10 @@ body{
 .usuario{
     float:right;
     margin-top: 21px;
+    display: block;
 }
+
+
 
 .usuario a{
     border: 0.5px solid #a1261b;
@@ -86,6 +101,19 @@ body{
     margin-right: 10px;
 }
 
+.usuario-online{
+    float:right;
+    margin-top: 5px;
+    display: none;
+}
+
+.usuario-online img{
+    border-radius: 100%;
+    width: 45px;
+    border: 1px solid #464646;
+    cursor: pointer;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -93,8 +121,8 @@ a{
 
 .welcome{
     float: left;
-    margin: 75px 25% 5px 25%;
-    width: 50%;
+    margin: 75px 25% 5px 08%;
+    width: 100%;
 }
 
 .welcome .text h1, .welcome .text h3{
@@ -104,12 +132,18 @@ a{
 .text{
     text-align: center;
     margin-bottom: 15px;
+    width: 88%;
+    font-family: trajan-pro-3, serif;
+    font-style: normal;
+    font-weight: bold;
+
 }
 
 .carousel{
     background: transparent;
     Border: 1px solid #262626;
     Box-shadow : 0px 10px 30px #26262626;
+    width: 88%;
 }
 
 .carousel-item{
@@ -191,4 +225,233 @@ height: 15px;
 .atual{
     color: #a1261b;
     text-decoration: underline;
+}
+
+.full-lores{
+    margin: 15px 75px 0px 105px;
+    border: 1px solid #262626;
+    height: auto;
+}
+
+.full-lores:hover{
+    cursor: pointer;
+    background-color: #262626;
+}
+
+.full-lores .title{
+    text-align: center;
+}
+
+.full-lores .details{
+    margin: 0px 15px 0px 15px
+}
+
+.details span p{
+    text-align: center;
+}
+
+.formulario-soulsite{
+    float: left;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.formulario-soulsite .content-form{
+    margin: 15px 0px 0px 75px;
+}
+
+.formulario-soulsite .first-message h1{
+    margin-bottom: 0;
+}
+
+.formulario-soulsite .first-message h1, .formulario-soulsite .first-message h5{
+    margin-top: 0;
+}
+
+.content-form{
+    width: 45%;
+}
+
+.content-form form{
+    display: grid;
+}
+
+.caixa-texto-padrao{
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+.btn-form{
+    width: 50%;
+    height: 55px;
+    margin: 0px 0px 0px 25%;
+    font-size: 22pt;
+}
+
+.formulario-soulsite div{
+    margin-bottom: 15px;
+}
+
+.btngreen{
+    background-color: #a1261b;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+
+.m-erro{
+    color: red;
+}
+.m-erro li{
+    background-color: #ff00004a;
+    padding: 10px;
+    margin: 5px;
+    list-style: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.form-content{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#form_login{
+    margin: 75px 25% 75px 30%;
+    width: 40%;
+    height: 75%;
+    border-radius: 5%;
+    background: transparent;
+    border: 1px solid #262626;
+
+}
+
+.container-input{
+    margin-left: 10%;
+}
+
+.container-input label{
+    display: block;
+}
+
+.container-input input{
+    height: 35px;
+    width: 85%;
+    font-size: 14pt;
+    color: inherit;
+    outline: none;
+    background: inherit;
+    border: 0.5px solid #a1261b;
+}
+
+#form_login img{
+    margin-left: 35%;
+    border-radius: 100%;
+    border: 1px solid;
+    margin-bottom: 15px;
+}
+
+.button-field{
+    margin-left: 10%;
+}
+
+#btn_entrar{
+    height: 55px;
+    width: 125px;
+    font-size: 22pt;
+    border: 1px solid #a1261b;
+    background: inherit;
+    color: inherit;
+    border-radius: 20% 0px 0px 0px;
+    margin-left: 0.25%;
+}
+
+.button-field button:nth-child(2){
+    height: 55px;
+    width: 150px;
+    font-size: 22pt;
+    border: 1px solid #a1261b;
+    background: inherit;
+    color: inherit;
+    margin-bottom: 10px;
+    margin-left: 27.5%;
+    border-radius: 0px 20% 0px 0px;
+}
+.button-field button:nth-child(4){
+    height: 55px;
+    width: 85%;
+    font-size: 22pt;
+    border: 1px solid #a1261b;
+    background: inherit;
+    color: inherit;
+    border-radius: 5px 5% 5px 5px;
+}
+
+.img-aguarde{
+    position: absolute;
+    top: 58%;
+    width: 20%;
+    left: 50%;
+    height: 30%;
+    margin: 74px 25% 75px 30%;
+    border-radius: 2%;
+    display: none;
+}
+
+.container-popup{
+    width: 90%;
+    margin: 0px 5% 0px 5%;
+}
+
+.popup-menu{
+    position: absolute;
+    width: 210px;
+    height: 400px;
+    background: #262626;
+    top: 65px;
+    right: 80px;
+    display: none;
+}
+
+.popup-image{
+    border-bottom: 0.2px solid #262626;
+    margin: 15px 0px 15px 0px;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.popup-image img{
+    width: 40px;
+    padding: 5px;
+    border: 0.2px solid;
+    border-radius: 100%;
+}
+
+.options-popup{
+    border-bottom: 0.2px solid #262626;
+    padding-bottom: 10px;
+}
+
+.username{
+    margin-left: 10px;
+}
+
+.popup-option{
+    margin-bottom: 35px;
+    margin-left: 10px;
+}
+
+.popup-option a span{
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.logoff-popup .popup-option{
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-bottom: 0;
+    color: #a1261b;
 }

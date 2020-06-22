@@ -37,7 +37,7 @@ router.post('/autenticar', function(req, res, next) {
 });
 
 /* Cadastrar usuário */
-router.post('/', function(req, res, next) {
+router.post('/cadastrar', function(req, res, next) {
 	console.log('Criando um usuário');
 	
 	Usuario.create({

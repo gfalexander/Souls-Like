@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soulsite</title>
+    <title>Demon Souls</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="funcoes.js"></script>
 </head>
-
 <body>
     <div class="header">
         <div class="container">
 
             <div class="logo">
-                <a href="">
-                    <img src="img/bonfireic1.png" alt="">
-                    <span>Soul<span class="atual">site</span></span>
-                </a>
+                <a href="">Soulsite</a>
             </div>
             <div class="search-bar">
                 <div>
@@ -36,58 +31,11 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html" class="atual">Inicio</a></li>
                     <li><a href="Historia.html">História</a></li>
-                    <a href="Suporte.html" id="no_log_contact" class="atual">Suporte</a>
+                    <a href="Suporte.html" id="no_log_contact">Suporte</a>
                 </ul>
             </div>
-        </div>
-    </div>
-    <div class="formulario-soulsite">
-        <div class="content-form">
-            <div class="first-message">
-                <h1>Está com problemas?</h1>
-                <h5>Entre em contato conosco</h5>
-            </div>
-            <form id="myForm" onsubmit="return enviaContatoProBanco()">
-                <ul id="mensagemErro" class="m-erro">
-                </ul>
-
-                <label for="nomesobrenome">Digite seu nome completo:</label>
-                <input type="text" id="nomesobrenome" class="caixa-texto-padrao" placeholder="Nome Exemplo">
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="seuemail@dominio.com" class="caixa-texto-padrao" />
-
-                <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" class="caixa-texto-padrao" placeholder="(00) 90000-0000" />
-
-                <label for="mensagem">Detalhes:</label>
-                <textarea id="mensagem" cols="60" rows="10" placeholder="Digite como podemos ajudar"></textarea>
-
-                <div>
-                    <p>Como prefere nosso contato ?</p>
-                    <label for="telefone-radio">
-                        <input type="radio" name="contato" id="telefone-radio" />
-                        Telefone
-                    </label>
-
-                    <label for="email-radio">
-                        <input type="radio" name="contato" id="email-radio" checked />
-                        E-mail:
-                    </label>
-
-                    <label for="whatsapp">
-                        <input type="radio" name="contato" id="whatsapp" />
-                        WhatsApp
-                    </label>
-                </div>
-                <button type="submit" class="btn-form btngreen">Enviar</button>
-            </form>
-            <div class="form-img"></div>
-        </div>
-        <div class="soulsite-logo">
-
         </div>
     </div>
     <div class="popup-menu" id="menu_user">
@@ -157,45 +105,8 @@
         </div>
     </div>
 </body>
-
 </html>
 
 <script>
     verificar_autenticacao();
-    function enviaContatoProBanco() {
-        var erros = validaContato();
-        mensagemErro.innerHTML = "";
-
-        if (erros.length > 0) {
-            for (var i = 0; i < erros.length; i++) {
-                var erro = erros[i];
-                var li = document.createElement("li");
-                li.innerHTML = erro;
-                mensagemErro.appendChild(li);
-            }
-        } else {
-            // Código que envia os dados
-            // para o BD
-        }
-    }
-
-    function validaContato() {
-        var erros = [];
-
-        if (!nomesobrenome.value) {
-            erros.push("Prencher nome!");
-        }
-
-        if (!email.value ||
-            (email.value.search("@") == -1) ||
-            (email.value.search(".") == -1) ||
-            (email.value.search(" ") >= '')) {
-            erros.push("O formato do email é: usuario@dominio.com");
-        }
-
-        if (!mensagem.value) {
-            erros.push("Preencha a mensagem!")
-        }
-        return erros;
-    }
 </script>

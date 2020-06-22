@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Soulsite</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="funcoes.js"></script>
 </head>
+
 <body>
     <div class="header">
         <div class="container">
 
             <div class="logo">
-                <a href="">Soulsite</a>
+                <a href="">
+                    <img src="img/bonfireic1.png" alt="">
+                    <span>Soul<span class="atual">site</span></span>
+                </a>
             </div>
             <div class="search-bar">
                 <div>
@@ -19,18 +25,1239 @@
                     <button>search</button>
                 </div>
             </div>
-            <div class="usuario">
+            <div class="usuario" id="usuario">
                 <a href="login.html">Entrar</a>
                 <a href="cadastro.html">Cadastrar</a>
+            </div>
+            <div class="usuario-online" id="usr_online">
+                <a onclick="fn_menu_usuario()">
+                    <img src="img/user-solaire.png" alt="">
+                </a>
             </div>
             <div class="menu">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="Historia.html" class="atual">História</a></li>
-                    <li><a href="Suporte.html">Suporte</a></li>
+                    <a href="Suporte.html" id="no_log_contact">Suporte</a>
                 </ul>
             </div>
         </div>
     </div>
+    <div class="lore" style="margin-top: 60px;">
+        <div class="full-lores">
+            <div class="title">
+                <h1>Demon's Souls</h1>
+            </div>
+            <div class="details">
+                <span>The world was once victim to a previous scourge of Demons in an ancient past before King Allant
+                    came to the throne. The Old One, an entity of unfathomable power, had awakened the bane of existence
+                    into the world, unleashing terrible Demons that ripped the land asunder, consequently exterminating
+                    half of humankind. Those that would become the Monumentals sought to spare the land from further
+                    harm, and combined with their knowledge of Soul Arts, returned the Old One back to its slumber. To
+                    divide the lands amidst different regions and to return life to where there was none, they ordered
+                    Archstones be constructed and placed throughout the world, all of which were connected to a central
+                    Archstone used for inter-regional travel.
+                    <br>
+                    <br>
+                    <br>
+                    Amidst the realm of reality and death exists a place known as the Nexus, a hub for the souls who
+                    traverse the ethereal worlds hoping to reclaim their bodies. Below the Nexus sleeps the Old One,
+                    offering the promise of limitless prosperity to any that gives him or herself up to it. King Allant
+                    the XII of Boletaria dreamed of bringing eternal wealth to his mighty kingdom, and thus gave himself
+                    wholly to the Old One's will, awakening it from its long slumber. Prosperity did not befall
+                    Boletaria, but instead the colorless fog of chaos and calamity blanketed the lands, and those still
+                    living were soon no longer among the sane.
+                    <br>
+                    <br>
+                    <br>
+                    The many former-citizens of Boletaria once prayed to God to grant them divinity in life. Among the
+                    most notable figureheads of the Kingdom's parish were Saint Urbain, a highly respected man of great
+                    spiritual knowledge and an abundance of faith, and the Sixth Saint Astraea, a divine Maiden
+                    worshipped for her purity. Urbain's followers revered him as being in direct communion with God, and
+                    through him they believed His message was delivered. It is Urbain's belief that the Demons were
+                    placed into Boletaria, and the fog consumed the Kingdom, as a test from God, and that all must use
+                    His miracles to banish the soul-thirsty horde.</span>
+            </div>
+        </div>
+        <div class="full-lores">
+            <div class="slide-dark-item">
+                <div class="title">
+                    <h1>Dark Souls</h1>
+                </div>
+                <div class="details">
+                    <span>
+                        The world of Dark Souls is a world of cycles. Kingdoms rise and fall, ages come and go, and even
+                        time can end and restart as the flame fades and is renewed. These cycles are linked to the First
+                        Flame, a mysterious manifestation of life that divides and defines separate states such as heat
+                        and
+                        cold, or life and death. As the First Flame fades, these differences also begin to fade, such as
+                        life and death having little distinction, and humans becoming Undead. The onset of an Age of
+                        Dark,
+                        the time when the First Flame has fully died, is marked by endless nights, rampant undeath,
+                        time,
+                        space, and reality breaking down, lands collapsing and converging on one another, people
+                        mutating
+                        into monsters, darkness covering the world, and the Gods losing their power. To avoid this and
+                        prolong the Age of Fire, the bearer of a powerful soul must "link" themselves to the First
+                        Flame,
+                        becoming the fuel for another age. If this is not done, the First Flame will eventually die, and
+                        an
+                        Age of Dark will begin.
+                        <br>
+                        <br>
+                        <br>
+                        The powerful Lord Souls were taken from the First Flame, used to defeat the dragons, and then to
+                        establish kingdoms. Souls are inextricably (and inexplicably) linked to fire. Souls are life,
+                        and
+                        life is fire; it stands to reason that souls are fire, as well. Without the First Flame and
+                        without
+                        souls, there is no life. The bearer of a strong soul, called a Lord, who links themselves to the
+                        First Flame, is thus rekindling the flames with their own soul, returning life to it. In the
+                        end,
+                        one could expect that all souls will have been returned to the First Flame, and the Age of Fire
+                        will
+                        have effectively ended anyways.
+                        <br>
+                        <br>
+                        <br>
+                        It is inevitable that people try to find a way around this, another way to continue the Age of
+                        Fire
+                        without making sacrifices, but in every case they fail. In the first Age of Fire, the Witch of
+                        Izalith attempted to create a duplicate of the First Flame using her witchcraft and a special
+                        soul,
+                        but failed catastrophically. Instead of making another First Flame, she had created a twisted
+                        Flame
+                        of Chaos that produced distortions of life, turning herself and all her daughters into demons.
+                        These
+                        demons were malevolent, and wandered the land. Gwyn gathered up his armies and fought the demons
+                        of
+                        Chaos, eventually driving them back and shackling the Bed of Chaos to bind them. Knowing that
+                        the
+                        Age of Fire was nearing its end, under the guidance of the primordial serpent Kingseeker Frampt,
+                        Gwyn offered himself to the First Flame to stave off the Dark. As the flames surged with new
+                        life,
+                        the knights who followed him in were burnt by the flames and now wander the world as the Black
+                        Knights, hollow shells of armor who attack indiscriminately.
+                        <br>
+                        <br>
+                        <br>
+                        Before he left to link the First Flame, Gwyn gave fragments of his soul to his followers and
+                        allies.
+                        Ornstein, Gough, Ciaran, and Artorias, his four strongest knights who fought against the
+                        dragons,
+                        Seath the Paledrake, who betrayed the dragons and played a crucial role in the war, and was also
+                        granted the title of Duke and permission to build a grand archive to conduct his research, and
+                        the
+                        Four Kings of New Londo, who ruled a city of Undead. In time, another primordial serpent
+                        convinced
+                        the people of the human kingdom of Oolacile to delve into the darkness of the Abyss to unearth
+                        the
+                        grave of an ancient human. Whether through their actions or some other means, the primordial
+                        human -
+                        Manus - was resurrected and driven to madness, and his wild Humanity caused the people of
+                        Oolacile
+                        to mutate into abominations. Manus, Father of the Abyss, began to rapidly spread Dark and
+                        accelerate
+                        the growth of the Abyss, and would've started an early Age of Dark had he not been defeated.
+                        Even
+                        so, the kingdom of Oolacile was lost to the Abyss, and eventually forgotten in the modern day.
+                        Nothing remains in the present day to mark the passing of this land save for Dusk, the princess
+                        of
+                        Oolacile.
+                        <br>
+                        <br>
+                        <br>
+                        Gwyn's youngest son Gwyndolin, together with Kingseeker Frampt, sheperds the humans by Gwyn's
+                        command. Together they built giant asylums to house the countless undead, hoping against hope
+                        that
+                        one of them would be chosen to defeat the Asylum demon, and fulfill their destiny. The Undead
+                        are
+                        sent on a quest to ring the Bells of Awakening, collect the Lordvessel, slay the bearers of
+                        Gwynn's
+                        soul, then offer those souls to the Lordvessel to open the path to the Kiln of the First Flame.
+                        In
+                        doing so, the unnatural Undead are given true death and the living can enjoy another age of fire
+                        for
+                        a thousand years, while the Undead linked to the First Flame will continue to burn, alive and
+                        aware,
+                        until someone else comes to take their place. And thus, the cycle continues.
+                    </span>
+                </div>
+            </div>
+            <div class="slide-dark-item">
+                <div class="title">
+                    <h1>Dark Souls II</h1>
+                </div>
+                <div class="details">
+                    <span>
+                        <p>
+                            <span>
+                                "This is a limbo. A link between Drangleic and the outer world.
+                            </span>
+                            <br>
+                            <span>
+                                Fair traveller, I know that you must have a story.
+                            </span>
+                            <br>
+                            <span>
+                                Why else would you visit such a place?
+                            </span>
+                            <br>
+                            <span>
+                                This lost, decayed kingdom."
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                You start the game as an accursed undead, mysteriously transported to a place called
+                                things betwixt. Hollowing and lost you find yourself at a quiet little cabin with Old
+                                Ladies sitting in it. The Old Ladies give you a task bringing purpose to your hollowing
+                                mind.
+                            </span>
+                        </p>
+                        <p>
+                            <span>"An Undead has come to play. Heh heh…</span>
+                            <br>
+                            <span>They all end up here, all the ones like you.</span>
+                            <br>
+                            <span>You spoke to that kind old dear, didn't you?</span>
+                            <br>
+                            <span>Heh heh…</span>
+                            <br>
+                            <span>You're finished.</span>
+                            <br>
+                            <span>You'll go Hollow.</span>
+                            <br>
+                            <span>Yes, you will become one of them.</span>
+                            <br>
+                            <span>Hollows prey upon men, feast upon their souls.</span>
+                            <br>
+                            <span>This is the fate of the cursed. Heh heh heh…</span>
+                        </p>
+                        <p>
+                            <span>All people come here for the same reason.</span>
+                            <span>To break the curse.</span>
+                            <span>You're no different, I should think?</span>
+                            <span>Hmm… doesn't stand a chance.</span>
+                            <span>Well, you never know!</span>
+                            <span>Go through the door and trot along to the kingdom.</span>
+                            <span>But remember, hold on to your souls.</span>
+                            <span>They're all that keep you from going Hollow.</span>
+                            <span>Oh, I'll fool you no longer…</span>
+                            <span>You'll lose your souls…All of them. Over and over again</span>
+                        </p>
+                        <p>
+                            <span>You must go, on a journey without rest.</span>
+                            <span>Well…I suppose, if you find yourself at an impasse…</span>
+                            <span>But if your will is yet unbroken, then you may return here.</span>
+                            <span>To start again, with a clean slate…</span>
+                            <span>Hah hah hah…"</span>
+                        </p>
+                        <p>
+                            <span>It is revealed that the Old Ladies were once Fire Keepers, by their
+                                Housekeeper.</span>
+                            <span>"The old women were keepers of the fire.</span>
+                            <span>But now, the fire shows signs of fading…</span>
+                            <span>And the kingdom…is beset by Hollows."</span>
+                        </p>
+
+
+                        <p>
+                            <span>
+                                Filled with purpose you set out into the Kingdom of Dragleic, searching for a cure of
+                                the
+                                curse.
+                                After traversing through the remains of an Archtree, you find yourself in a decrepit
+                                town
+                                called
+                                Majula where a Lone woman in Emerald is tending a bonfire. She Greets you with a
+                                question.
+                            </span>
+                        </p>
+
+                        <p>
+                            <span>"Are you...the next monarch?</span>
+                            <span>Or... Merely a pawn of fate?</span>
+                            <span>Bearer of the curse... I will remain by your side.</span>
+                            <span>Till this frail hope shatters... Take this with you. May it ease your journey.</span>
+                            <span>Go on, and see the King.</span>
+                            <span>He who made Drangleic what it once was; he who peered at the essence of the
+                                soul.</span>
+                            <span>King Vendrick."</span>
+                        </p>
+
+
+
+
+                        <p>
+                            <span>
+                                This question seems to parallel Frampt's search in Dark Souls 1. The Emerald Herald
+                                tasks you
+                                with a new mission.
+                            </span>
+                        </p>
+
+                        <p>
+                            <span>"Bearer of the curse, seek misery.</span>
+                            <span>For misery will lead you to greater, stronger souls.</span>
+                            <span>You will never meet the King with a soul so frail and pallid.</span>
+                        </p>
+                        <p>
+                            <span>Seek those whose names are unutterable, the four endowed with immense souls.</span>
+                            <span>Their souls will serve as beacons.</span>
+                            <span>Once you have found them, return here to me.</span>
+                            <span>So that hope will not fade away.</span>
+                        </p>
+                        <p>
+                            <span>Bearer of the curse... Seek souls. Larger, more powerful souls.</span>
+                            <span>Seek the King, that is the only way.</span>
+                            <span>Lest this land swallow you whole... As it has so many others."</span>
+                        </p>
+
+
+
+
+                        <p>
+                            <span>Before you leave town, others inform you on these unutterable ones.</span>
+                        </p>
+
+                        <p>
+                            <span>"There are four beings in this land with giant souls.</span>
+                            <span>And wherever you go from here, you'll sooner or later come up against them.</span>
+                            <span>Each has a powerful soul, and a terrible curse…</span>
+                            <span>If that frightens you, then you ought to just give up right now. Like I have. Hah hah
+                                hah"</span>
+                        </p>
+                        <p>
+                            <span>"Are you going to see the Old Ones?</span>
+                            <span>Those four who have grown so incredibly ancient.</span>
+                            <span>They must have sprouted quite a thick coat of moss by now.</span>
+                            <span>For heaven's sake, no-one even knows their names anymore!</span>
+                            <span>Imagine that! Hee hee hee hee!</span>
+                            <span>Yes…Nothing like yourself.</span>
+                            <span>For you…have a most pleasant scent, that grows nicer with each passing day.</span>
+                        </p>
+
+
+                        <p>
+                            <span>Once, people tried to round up the Undead and hide them away from the world.</span>
+                            <span>They thought that imprisoning the Undead would solve the problem.</span>
+                            <span>They created a towering bastille to contain them, but in the end, it did no
+                                good.</span>
+                            <span>The Lost Sinner lives deep within the bastille.</span>
+                            <span>The fool. Trying to light the First Flame…</span>
+                        </p>
+
+
+                        <p>
+                            <span>Why do people try so hard to be beautiful?</span>
+                            <span>We cats are born beautiful, of course. Hee hee…</span>
+                            <span>The human ego…How many ugly iron castles has it erected?</span>
+                            <span>And they don't even see the folly of their ways.</span>
+                            <span>But that's what makes watching humankind so delightful.</span>
+                            <span>It reminds me of someone who lived long ago.</span>
+                            <span>A vainglorious liar who ended up hurling himself into the flames.</span>
+                            <span>Now he's Ichorous Earth, if I'm not mistaken.</span>
+                        </p>
+
+
+                        <p>
+                            <span>You've seen that gaping hole here?</span>
+                            <span>Well, there's nasty little vermin down there.</span>
+                            <span>Although who you seek is even further below.</span>
+                            <span>And has been down there for a very, very long time.</span>
+                            <span>He's plumb Rotten by now, I'm sure! Hee hee hee…</span>
+                        </p>
+
+
+                        <p>
+                            <span>Men develop the most peculiar fascinations.</span>
+                            <span>Sometimes their fascinations seem to take control.</span>
+                            <span>Till there's very little man left. Hee hee hee…</span>
+                            <span>Oh, it's like that awful traitor long ago.</span>
+                            <span>He coveted what he did not have, and it drove him mad.</span>
+                            <span>What a curious conundrum. Hee hee hee…</span>
+                            <span>The Writhing Ruin keeps searching as we speak.</span>
+                            <span>Searching for its heart's desire."</span>
+                        </p>
+
+
+                        <p>
+                            <span>
+                                With rumors in hand and a direction to go you, seek out these four Great Souls. A mass
+                                of bodies
+                                in a poisoned gulch, an experimental spider in a bright cove, a forgotten prisoner in an
+                                abandoned prison, and a fallen king in a sinking lava filled castle. Upon Gathering the
+                                Final
+                                Soul You encounter a stranger. He implores you to continue your quest.
+                            </span>
+                        </p>
+
+                        <p>
+                            <span>"No one has come this far, not for a very long while.</span>
+                            <span>Young Hollow do you wish to shed this curse?</span>
+                            <span>Then accept the fate of your ilk, and face the trials that await you.</span>
+                            <span>Unless, you have already joined the crestfallen.</span>
+                        </p>
+
+                        <p>
+                            <span>Young Hollow, there are but two paths. Inherit the order of this world, or destroy
+                                it.</span>
+                            <span>But only a true monarch can make such a choice.</span>
+                            <span>Very few, indeed, have come even this far.</span>
+                            <span>And yet, your journey is far from over.</span>
+                            <span>Half-grown Hollow, have you what it takes, truly?</span>
+                        </p>
+
+
+                        Young Hollow, seek after Vendrick. <br>
+                        He who almost became a true monarch. <br>
+                        Vendrick is certain to guide your way. <br>
+                        Fledgeling Hollow, may we meet again." <br>
+                        <br>
+                        <br>
+                        <br>
+                        Once you have gathered these four Great Souls a new path is opened to find the King. On your
+                        path to the castle you meet the Emerald Herald once again.
+                        <br>
+                        <br>
+                        "You have acquired the soul of an Old One. <br>
+                        That is more than most Undead can say.
+                        <br>
+                        The soul and the curse are one and the same. <br>
+                        Your soul has grown stronger still. <br>
+                        I only hope it brings you what you wish. <br>
+                        <br>
+                        Proceed, bearer of the curse. <br>
+                        It is the only choice left to you. <br>
+                        <br>
+                        You are blessed with a myriad of souls. <br>
+                        Bearer of the curse, make your way to the castle. <br>
+                        <br>
+                        This castle is isolated. <br>
+                        But nonetheless, you must forge on. <br>
+                        To bring an end to your journey…and mine. End your journey…and mine." <br>
+                        <br>
+                        <br>
+                        Upon entering the castle you are greeted by a confused shade. <br>
+
+                        "Who are you… <br>
+                        And by whose permission do you stand before me? <br>
+                        This castle is the domain of King Vendrick. Is your trespass intentional? <br>
+                        … <br>
+                        His Highness…Where has he gone? <br>
+                        <br>
+                        You are a guest of our castle. I am the Chancellor, Wellager. <br>
+                        Do you seek an audience with my Lord, King Vendrick? <br>
+                        Unfortunately, His Highness is absent. <br>
+                        My Lord…The King has… <br>
+                        The Queen…Has taken him… <br>
+                        <br>
+                        <br>
+                        My Lord made magnificent findings on souls… An accomplishment for the ages… <br>
+                        He vanquished the Four Great Ones… And built this kingdom upon their souls. <br>
+                        Our King has watched over this land… Since ages long, long ago… <br>
+                        King Vendrick…We must fight back… Or the Giants will take Drangleic…<br>
+                        <br>
+                        <br>
+                        The King had a dear Queen, a woman of unparalleled beauty.<br>
+                        Long ago, the Queen came to us, alone, from a faraway land.<br>
+                        She warned our Lord of the looming threat across the seas…of the Giants.<br>
+                        The King crossed the ocean… And defeated the Giants, with the Queen at his side.<br>
+                        <br>
+                        <br>
+                        The King commandeered their power… And created the Golems. <br>
+                        With the Golems, the king created this castle. <br>
+                        To celebrate victory… And to show his love, his gratitude to his Queen…<br>
+                        <br>
+                        <br>
+                        The Queen…Brought peace… to this land, and to her King.<br>
+                        A peace so deep…it was like…<br>
+                        The Dark…<br>
+                        <br>
+                        <br>
+                        Is this…some sort of a dream? <br>
+                        ……<br>
+                        Where am I? What has happened to our castle…<br>
+                        Who are you…<br>
+                        And by whose permission do you stand before me?"<br>
+                        <br>
+                        <br>
+
+
+
+                        As you venture further in the Castle you encounter the Queen of Drangleic, Nashandra.<br>
+                        <br>
+                        <br>
+
+                        "You have fought admirably on your journey, cursed Undead.<br>
+                        I am Nashandra, Queen of Drangleic.<br>
+                        A true monarch carries the weight of their souls.<br>
+                        The last king of this land, King Vendrick, as he was called…<br>
+                        He was less of a king than you might imagine.<br>
+                        He found the strength to rule his people, and when the Undead were born, cursed…<br>
+                        He found more strength, to face them.<br>
+                        But in the end, he never took the true throne.<br>
+                        <br>
+                        Visit Vendrick.<br>
+                        We have no need for two rulers…"<br>
+                        <br>
+                        <br>
+                        <br>
+
+
+                        Once again you meet A Stranger who has a monstrous appearance.
+                        <br>
+                        <br>
+                        "Heheh, I believe we've been acquainted.<br>
+                        Young Hollow, conqueror of fear.<br>
+                        What drives you so, to overcome this supposed curse?<br>
+                        <br>
+                        Life is brilliant. Beautiful. It enchants us, to the point of obsession.<br>
+                        Some are true to their purpose, though they are but shells, flesh and mind.<br>
+                        One man lost his own body, but lingered on, as a head.<br>
+                        Others chase the charms of love, however elusive.<br>
+                        What is it that drives you?<br>
+                        <br>
+                        Once, the Lord of Light banished Dark, and all that stemmed from humanity.<br>
+                        And men assumed a fleeting form.<br>
+                        These are the roots of our world.<br>
+                        Men are props on the stage of life, and no matter how tender, how exquisite...<br>
+                        A lie will remain a lie.<br>
+                        Young Hollow, knowing this, do you still desire peace?"<br>
+                        <br>
+
+                        <br>
+                        He sumuarizes many of the NPCs storylines and even hints at how the Chosen Undead was Lied
+                        to.<br>
+                        Then he proceeds to question your task, before leaving.<br>
+                        <br>
+                        <br>
+                        " Vendrick, the near-true monarch, is here, and not far off.<br>
+                        But what is a king?<br>
+                        You, neither born with greatness, nor granted it by the fates.<br>
+                        What is it that you seek?<br>
+                        You cannot even say yourself.<br>
+                        We shall meet again, young Hollow."<br>
+                        <br>
+                        <br>
+
+                        Upon Entering the Undead Crypt you are beseached by a Grave Warden.<br>
+                        <br>
+                        <br>
+                        " Halt.<br>
+                        Human. Do not produce light.<br>
+                        Light, and all those who bear it, are unwelcome in this place.<br>
+                        <br>
+                        I am Agdayne. Guardian of the crypt.<br>
+                        Countless dead rest here in peace. Cradled by the comfort of dark.<br>
+                        Light only agitates. We have no need for it here.<br>
+                        <br>
+                        I am a Fenito. We weave death, and watch over the dead.<br>
+                        This task was granted to me by the one who gave us the first death.<br>
+                        Countless souls rest here. Some of them from ages long ago.<br>
+                        Some were rich, others poor. Some wise, some dull, but now, they are all just dead.<br>
+                        <br>
+                        This place is welcome to all, provided due reverence is shown.<br>
+                        Death is equitable, accepting. We will all, one day, be welcomed by her embrace.<br>
+                        Tell me what you desire. Show me reverence, and I will lend you my hand.<br>
+                        <br>
+                        In the past, humans were one with the dark.<br>
+                        The former King of Light…He feared humans. Feared that they would usher in an age of dark.<br>
+                        How queer, you humans. How you go on, never separating truth from fiction.<br>
+                        <br>
+                        Did you come for him? The one called Vendrick.<br>
+                        You will find him deeper inside.<br>
+                        Many castle servants and the like have come to fetch their lord.<br>
+                        But they rest here now, put to death by the King's own guards.<br>
+                        Perhaps he's not in the mood for company."<br>
+                        <br>
+                        <br>
+                        Further in you finally meet Vendrick who has hollowed. It us up to you to either Slay him and
+                        or<br>
+                        take his ring. Upon Leaving the Grave Warden mentions.<br>
+                        <br>
+                        <br>
+                        "You've met the King, have you?<br>
+                        Life is never easy, never fair. Even more so, on this path you've chosen.<br>
+                        May you find your peace one day"<br>
+                        <br>
+                        <br>
+                        <br>
+                        As you retrace your footsteps, you find yourself once again in Queen Nashandra's Presence.<br>
+                        "Brave Undead, seek the throne.<br>
+                        Follow the symbol of the monarch, and do what must be done."<br>
+                        <br>
+                        <br>
+                        <br>
+                        If you stop and speak to the Emerald Herald She tells you.<br>
+                        <br>
+                        <br>
+                        "This ring is the symbol of the King.<br>
+                        Use it to gain passage, through the King's Gate… …and venture to the far east…<br>
+                        Bearer of the curse, if you are to be the next monarch.<br>
+                        Then, one day, you will walk those grounds… …without really knowing why."<br>
+                        <br>
+                        <br>
+                        <br>
+                        With a new quest in hand you seek out the symbols of the king. You find yourself in front of
+                        a<br>
+                        Large Keep. In this Keep You see that many experiments have taken place here and even
+                        encounter<br>
+                        a caged Dragon. You find yourself heading up an elevator into a a place filled with flying
+                        Dragons. There you encounter the Emerald Herald.<br>
+                        "Bearer of the curse.<br>
+                        Long have I awaited one such as you, one who might shatter the shackles of fate.<br>
+                        One who can set me free.<br>
+                        Bearer of the curse, it was my own manifestation that led you here.<br>
+                        The ancient dragon has watched over the world for aeons past.<br>
+                        Take this. Do not resist. The dragon welcomes you."<br>
+                        <br>
+                        <br>
+                        <br>
+                        The Emerald Herald Gives you an Aged Feather as a Gift. You tread further into this Dragon
+                        Aerie<br>
+                        and cross a rope bridge. At the Bonfire in what is called the Dragon Shrine you encounter
+                        the<br>
+                        Stranger once again.
+                        <br>
+                        <br>
+                        "Young Hollow.<br>
+                        How you grapple, without falter, with this dreadfully twisted world.<br>
+                        <br>
+                        Peace grants men the illusion of life.<br>
+                        Shackled by falsehoods, they yearn for love, unaware of its grand illusion.<br>
+                        Until, the curse touches their flesh.<br>
+                        We are bound by this yoke.<br>
+                        As true as the Dark that churns within men.<br>
+                        <br>
+                        All men trust fully the illusion of life.<br>
+                        But is this so wrong?<br>
+                        A construction, a facade, and yet...<br>
+                        A world full of warmth and resplendence.<br>
+                        Young Hollow, are you intent on shattering the yoke, spoiling this wonderful falsehood?<br>
+                        <br><br><br>
+                        ...<br>
+                        <br><br><br>
+                        I am Aldia.<br>
+                        I sought to shed the yoke of fate, but failed.<br>
+                        Now, I only await an answer.<br>
+                        Seek the throne.<br>
+                        Seek light, Dark and what lies beyond..."<br>
+                        <br>
+                        <br>
+                        <br>
+                        Further on in the Shrine you encounter the Ancient Dragon. Who gifts you with the Ashen Mist
+                        Heart, allowing you to interact with the memories of the hollowed or departed.<br>
+                        <br>
+                        <br>
+                        "The murk shifts and stirs.<br>
+                        Yet another stands before us…<br>
+                        Then so be it.<br>
+                        For the curse of life, is the curse of want.<br>
+                        And so, you peer…<br>
+                        Into the fog, in hope of answers."<br>
+                        <br>
+                        <br>
+                        <br>
+                        If you see the Queen after the Ancient Dragon. She tells you,<br>
+                        <br>
+                        "Brave Undead, what did that dragon tell you?<br>
+                        That thing is a prop, a false deity. Don't be fooled, my Undead.<br>
+                        <br>
+                        Seek the forest, you, where those wretched Giants slumber."<br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        Following Aldia's, Nashandra's and the Ancient Dragons Advice you seek out the memories of
+                        the<br>
+                        Giants and Vendrick. The Giant's show the devastation they wrought on Drangleic, While
+                        Vendrick's memories allow you to understand him.<br>
+                        <br>
+                        <br>
+                        "Seeker of fire, coveter of the throne.<br>
+                        I am Vendrick, ruler of Drangleic.<br>
+                        <br>
+                        I am no king. I am more fit to be a jester…<br>
+                        I was unaware of my own blindness.<br>
+                        We are feeble vessels, with feebler souls.<br>
+                        We would cast aside the prop of life, only to face greater hardship.<br>
+                        Are you another such fool, or something more?<br>
+                        <br>
+                        Seeker of fire, deliverer of crowns.<br>
+                        What do you see in the flames?<br>
+                        Find the crowns, and your own answers.<br>
+                        The crowns hold the strength of lords from time long past.<br>
+                        Seek adversity.<br>
+                        As befits you, seeker of fire, coveter of the throne.<br>
+                        <br>
+                        I fail to see your design, young moth.<br>
+                        But I see very little, these days…"<br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        With a new task in hand it is time to seek out the other fallen kings and their crowns. Once
+                        you<br>
+                        have Acquired the Crown's from the fallen Monarch's Vendrick will Give you his Blessing after
+                        he<br>
+                        gives you his insight.<br>
+                        <br>
+                        <br>
+                        "Seeker of fire, conqueror of Dark.<br>
+                        I, too, sought fire, once.<br>
+                        With fire, they say, a true king can harness the curse.<br>
+                        A lie. But I knew no better…<br>
+                        Seeker of fire, you know not the depths of Dark within you.<br>
+                        It grows deeper still, the more flame you covet.<br>
+                        Flame, oh, flame…<br>
+                        <br>
+                        I am king of this wretched, unravelled kingdom.<br>
+                        I subdued the Giants, and claimed their strength.<br>
+                        So that I might step closer to fire…<br>
+                        Drangleic will fall, the fire will fade, and the souls of old will reemerge.<br>
+                        With Dark unshackled, a curse will be upon us…<br>
+                        And men will take their true shape…<br>
+                        <br>
+                        Seeker of fire, I see you've subdued another foul creature.<br>
+                        One of the Father of the Abyss' spawn, that confounded quintessence of humanity.<br>
+                        The Abyss once had form, but then dissipated.<br>
+                        And yet, traces of its existence endured.<br>
+                        Each fragment, thirsting for power, spread Dark, with no relent.<br>
+                        My dear Shandra… was one such fragment…<br>
+                        A feeble, tiny thing that thirsted for power more than any other…<br>
+                        Driven by insatiable lust for a worthy vessel.<br>
+                        <br>
+                        Fire came to be, and with it, Disparity.<br>
+                        Heat and cold, life and death, Light and Dark.<br>
+                        Dark was seen as a curse.<br>
+                        Shadow is not cast, but born of fire.<br>
+                        And, the brighter the flame, the deeper the shadow.<br>
+                        Inherit fire, and harness the Dark.<br>
+                        Such is the calling of a true leader…<br>
+                        <br>
+                        One day, fire will fade, and Dark will become a curse.<br>
+                        Men will be free from death, left to wander eternally.<br>
+                        Dark will again be ours, and in our true shape…<br>
+                        We can bury the false legends of yore… Only…<br>
+                        Is this our only choice?<br>
+                        Seeker of fire, coveter of the throne.<br>
+                        Seek strength.<br>
+                        The rest will follow… "<br>
+                        <br>
+                        <br>
+                        <br>
+                        With Vendrick's Blessing in hand it is time to Seek out the Throne. On the Path to the
+                        throne<br>
+                        you find the Emerald Herald once more, where she warns you of Nashandra.<br>
+                        <br>
+                        <br>
+                        "My journey is already complete.<br>
+                        My name is Shanalotte.<br>
+                        The dragon gave me this name, for I was born with none.<br>
+                        I was born of dragons, contrived by men.<br>
+                        By ones who would cozen fate herself… They are the ones who created me.<br>
+                        But they failed. I did not come out as intended.<br>
+                        Fate would not be bested, and men were cursed once again.<br>
+                        If you proceed, Nashandra will come after you.<br>
+                        Knowing that you will take the throne, and link the fire.<br>
+                        She covets the First Flame, and the Great Soul.<br>
+                        Put Nashandra to rest."<br>
+                        <br>
+                        <br>
+                        <br>
+                        As you Venture forth and defeat the Throne Watcher and Defender, You are confronted by
+                        Nashandra.<br>
+                        <br>
+                        <br>
+                        "Brave Undead,<br>
+                        you have proven yourself to me.<br>
+                        Now, be one, with the Dark…"<br>
+                        <br>
+                        <br>
+                        <br>
+                        Once you defeat Nashandra you encounter Aldia. (Note if you do not have Scholar of the First
+                        Sin<br>
+                        or have received Vendrick's Blessing the game defaults to ending 1.) Aldia wishes to test
+                        your<br>
+                        resolve.
+                        <br>
+                        <br>
+                        "Many monarchs have come and gone.<br>
+                        One drowned in poison, another succumbed to flame.<br>
+                        Still another slumbers in a realm of ice.<br>
+                        Not one of them stood here, as you do now.<br>
+                        You, conqueror of adversities.<br>
+                        Give us your answer."<br>
+                        <br>
+                        Once you defeat Aldia you are left with a Choice, accept the world how it is or find a new
+                        path.<br>
+                        <br>
+                        <br>
+                        "I lost everything, but remained here, patiently.<br>
+                        The throne will certainly receive you.<br>
+                        But the question remains...<br>
+                        What do you want, truly?<br>
+                        Light? Dark? Or something else entirely...''<br>
+                    </span>
+                </div>
+            </div>
+            <div class="slide-dark-item">
+                <div class="title">
+                    <h1>Dark Souls III</h1>
+                </div>
+                <div class="details">
+                    <span>
+                        "Only in truth the lords will abandon their thrones and the unkindled will rise. Nameless
+                        accursed undead, unfit even to be cinder. And so it is, that ash seeketh embers."
+                        <br>
+                        "They say these are the remains of a saint who cast himself into the bonfire. But we will never
+                        know for sure, for soot and ashes tell no story."
+                        <br>
+                        As the intro says, the Unkindled are beings of ash, unworthy to ascend to become Lords of
+                        Cinder. They are awakened by the tolling of a bell that rings when the First Flame is in danger
+                        of fading. They awaken in the Cemetery of Ash and seek the embers of the First Flame. During the
+                        whole game the protagonist is called Unkindled, Champion of Ash or Ashen One all of which harken
+                        back to the origins of the unkindled.
+                        <br>
+                        There are some speculations about what it means to be Unkindled. First of all, upon killing
+                        certain unkindled NPCs they drop ashes, meaning they were burned at some point before reviving.
+                        Thus Unkindled are perhaps either related to the bornfire creation process, or they are nameless
+                        Accursed undead who linked the First Flame but died in the process. The Lords of Cinder, on the
+                        other hand, were beings so powerful they did survive the linking and turned into Cinder instead
+                        of mere Ash.
+                        <br>
+                        The first hint supporting this theory is a play between the words Cinder and Ash. The latter
+                        refers to what remains after a material has been burnt completely while Cinder means that it has
+                        not been consumed completely. The Undead throw themselves in the bonfire and fuel the Flame but
+                        they are entirely consumed in the process, leaving only ashes that need embers to ignite. These
+                        ashes are found numerous times throughout the journey of the game, implying the cyclical nature
+                        of Dark and Flame. The intro sentence "Ash seeketh embers" takes shape now. Embers in the game
+                        are defined as:
+                        <br>
+                        "No Unkindled can ever truly claim the embers that burn within a champion’s bosom, which is
+                        precisely what makes their yearning for warmth so keen. Gain the strength of flame and increase
+                        max HP until death. With the strength of fire, the summoning signs of Unkindled become visible,
+                        and seekers of embers can be summoned to join in co-operation. But beware the embers may also
+                        attract invaders."
+                        <br>
+                        From DSII we know that many generations passed and many indivuals sacrified themselves to link
+                        the Flame and rekindle the fire. Lords of Cinder, came many generations after, and it is rare
+                        for someone to survive the fire. It seems one must be powerful in a unique way to survive and
+                        even then their form changes. Gwyn was a Lord of Cinder, but it is clear that his form was
+                        changed by the linking and it was a great sacrifice even for one as great as him. A vast amount
+                        of generations passed, we would obviously have many of unkindled and, of course, many amount of
+                        tombs in the Cemetery of Ash. We also fight against a manifestation of all Undead who linked the
+                        fire, that is, the Soul of Cinder, who seems to be good at all fighting styles.
+                        <br>
+                        Another hint supporting that Lords of Cinder did not burn completely and stayed alive after
+                        linking the fire is the fact that all unkindled resurrect with their human forms. All Lords of
+                        Cinder wake up with their charred corpses, like Ludleth, and they all seem to have gained
+                        certain amount of fire power, juding by their boss fights. Aldrich did not die either, he had a
+                        vision of an upcoming Age of the Deep Sea, so he started devouring Gods.
+                        <br>
+                        The last detail relating the Unkindled to all of the previous Undead who sacrified themselves
+                        for the Flame is found in a song. The name of this song is mentioned in the intro of DSIII. when
+                        you beat DSI you see your character burning in the kiln and then The Nameless Song starts to
+                        play. This sad tone is played at the end of your quest and it is what defines your character.
+                        Our characters did everything and died a thousand of times just to be a sacrifice to extend the
+                        age of the gods. It happened many times, and they are nameless, no one is going to remember
+                        their names or write poems about them.
+                        <br>
+                        Whatever unkindled are, their task is clear. They have to seek out the Lords Of Cinder in order
+                        to reenact relinking the First Flame and preserve the age of fire. They are also undead who are
+                        not fully bound by the hollowing process we saw in past games, needing to acquire Dark Sigils in
+                        order to go Hollow.
+                        <br>
+                        The Lords of Cinder
+                        "If the lords will not return to their thrones themselves, let them return as cinders."
+                        <br>
+                        One becomes a Lord of Cinder by relinking the First Flame in the Kiln and Surviving. There are
+                        currently 5 Lords of Cinder, all 5 of their ashes are needed to reenact the Linking of the First
+                        Flame. The 5 Lords are Aldrich Saint of the Deep, Ludleth the Exiled, Yhorm the Giant, Farron's
+                        Undead Legion, and Lothric, the last hope of his line.
+                        <br>
+                        Ludleth the Exiled linked the First Flame long ago by willing himself to. Aldrich was once a
+                        cleric that devoured men. He became so powerful that he was used to relink the Flame. Upon
+                        ascension to a Lord of Cinder, Aldrich sought to devour gods and even gained a cult around him
+                        that formed the Sable Church of the Deep.
+                        <br>
+                        Farron's Undead Legion of Abyss Watchers partook of the blood of an ancient wolf, the Wolf's
+                        blood linked the Abyss watchers to their master, the legendary Artorias of the Abyss. Emulating
+                        Artorias, the Abyss Wachers guard against creatures from the Abyss. The Abyss Watchers swore on
+                        their share Wolf's Blood to relink the Flame.
+                        <br>
+                        Yhorm the Giant sought to end the Profaned flame by relinking the First Flame. Instead of
+                        Eliminating the Profaned Flame, the capital burned killing all except Yhorm. Pontif Sulyvahn
+                        travelled to the Profaned Capital and saw the Profaned Flame. This hints that Yhorm linked the
+                        Flame before Aldrich.
+                        <br>
+                        Lothric refused to relink the Flame, choosing instead to allow the Flame to fade as he watched
+                        it from a distance with his brother.
+                        <br>
+                        <br>
+                        <br>
+                        The Deep
+                        "The deep was originally a peaceful and sacred place, but became the final rest for many
+                        abhorrent things. This tale of the Deep offers protection for those who worship amidst those
+                        horrors."
+                        <br>
+                        "These insects which lurk in the Deep have tiny jaws lined with fangs to tear open the skin and
+                        burrow into the flesh in the blink of an eye, causing intense bleeding."
+                        <br>
+                        "Souls which swell from the deep pursue their target, drawn towards life."
+                        <br>
+                        "A gem of infused titanite. Found in the dregs of the Cathedral of the deep. Used in infusion to
+                        create deep weapons. Deep weapons inflict dark damage, but lose scaling effects. There is a
+                        darkness that lies beyond human ken."
+                        <br>
+                        As stated in the Dark Souls summary, the Abyss was not created until the events that took place
+                        in Oolacile, and it was born after Manus humanity went wild due to torture. Humanity is
+                        described as something warm but at the same time dangerous, so when disturbed it created the
+                        Abyss. Artorias traveled here in order to stop it and it is stated, in his ring, that he made a
+                        pact with the creatures of the abyss not to be corrupted and killed. This part is key because we
+                        are told that humanity is born from the dark soul, which implies darkness. But this darkness is
+                        not inneherntly evil, until it got disturbed, and created the Abyss. The Abyss corrupts
+                        everything and kills everyone but it seems that some creatures inhabit this peculiar place.
+                        <br>
+                        From the descriptions above we can see that the Deep was initially calm but it became a place
+                        for abhorrent creatures. There are insects in the Deep that basically kill all life. The Deep is
+                        Dark, but a Dark that lies beyond humanity, which is also dark. The Deep could be the Abyss.
+                        When Lord Souls are disrupted you create monstruosities. The Witch of Izalith tried to create a
+                        First Flame with her own Lord Soul and she just created Chaos. Oolacile people disrupted a
+                        fragment of the Dark Soul ( Manus) and they created the Abyss.
+                        <br>
+                        A last hint about the nature of the Deep is given by the Farron's Undead Legion boss soul
+                        weapons, the Wolf Knight's Greatsword and the Farron Greatsword, since both swords deal a bonus
+                        damage against Aldrich and the Deacons of the Deep. These weapons are designed to fight against
+                        the abyss, and deal more damage to abyssal foes, hence Aldrich and the Deacons are related to
+                        the Abyss.
+                        <br>
+                        Aldrich, Saint of the Deep
+                        Aldrich is another Lord of Cinder that neglected his duties, having his own ambitions after the
+                        linking of the fire. He was a cleric in the past but at some point he started eating human
+                        flesh, and he sure enjoyed it, as can be seen from Aldrich Ruby or Saphire:
+                        <br>
+                        "Infamous for his appetite for flesh apparently had the desire to share with others his joy of
+                        imbibing the final shudders of life while luxuriating in his victim's screams"
+                        <br>
+                        He is probably the founder of the Cathedral of the Deep, where he got some followers for his
+                        cult, maybe due to fear. His victims were transported from the Undead Settlement to the
+                        Cathedral through the Road of Sacrifices. This is inferred from the Evangelist Set:
+                        <br>
+                        "These teachers, all women, came to enlighten inhabitants of the Undead Settlement and sent
+                        carriers on the path of sacrifice."
+                        <br>
+                        It is also stated that Horace did evade being devoured alive and survived, along with other
+                        children, hinted to be Anri. This hint comes mainly from the fixation of Anri to kill Aldrich
+                        ever since our first encounter, being even a summon. Horace Exceutioner's Armor also tells us
+                        something:
+                        <br>
+                        "Steel armor of Horace the Hushed, who took a liking to its cold, bulky insides. The original
+                        owner was said to be a corrupt executioner, who was killed and stripped of his armor. Horace is
+                        one of only two children to escape Aldrich's clutches."
+                        <br>
+                        At some point the flame started to fade and the Undead curse arose again, so he probably ate
+                        undead humans too. What points this out is the high amount of weak undead bodies outside the
+                        cathedral, bodies that Aldrich did not finish, as the grave warden set seems to suggest:
+                        <br>
+                        "Rotting, tattered skirt, robe, hood and wrap. Attire of grave wardens at the Cathedral of the
+                        Deep. Grave wardens were tasked with disposing of the ever rising corpses that plagued the
+                        cathedral. Their clothes are utterly putrid, drenched in the blood and mucilage of their
+                        undertaking."
+                        <br>
+                        We said before that Aldrich started being a cleric, but then he got corrupted. It is unknown
+                        wether the corruption took place before eating so many humans but he grew (pun intended) fond of
+                        The Abyss. It could be that, after killing so many humans and enjoying the suffering from his
+                        victims while they were being eaten alive, he disrupted a significant amount of the dark soul,
+                        turning himself into an abyss like creature.
+                        <br>
+                        After some time, whoever ruled the kingdom made him link the flame, not for saint but for might,
+                        as Hawkwood tells us. He then had visions of the upcoming age of the Deep Sea so he started
+                        devouring Gods instead. This might have two possible explanations. The age of fire means the age
+                        of Gods, so he would try to get rid of all the gods for one day ruling in an age of dark.
+                        Second, he would need to become something more powerful to survive if The Abyss spreads. Cinders
+                        of a Lord and Soul of Aldrich respectively read:
+                        <br>
+                        " Aldrich became a lord by devouring men, but was disillusioned with his throne, and so took to
+                        devouring gods instead."
+                        <br>
+                        "When Aldrich ruminated on the fading of the fire, it inspired visions of a coming age of the
+                        deep sea. He knew the path would be arduous, but he had no fear. He would devour the gods
+                        himself."
+                        <br>
+                        In any case, he devoured some Gods and linked the fire, then his body of cinder was took to the
+                        tomb. When he awakened he marched from the Cathedral to Anor Londo to have a gift from Sulyvahn,
+                        Gwyndolin. It is possible that when we fight him he is still devouring the god of the darkmoon,
+                        since we still see part of him. If this is right then it means that Priscilla is alive, since he
+                        had a dream about her while devouring Gwyndolin. Darkmoon Longbow and Lifehunt Scythe:
+                        <br>
+                        "Longbow of Darkmoon Gwyndolin, who was gradually devoured by Aldrich.This golden bow is imbued
+                        with powerful magic and is most impressive with Moonlight Arrows."
+                        <br>
+                        "Aldrich dreamt as he slowly devoured the God of the Darkmoon. In this dream, he perceived the
+                        form of a young, pale girl in hiding."
+                        <br>
+                        The Profaned Flame
+                        Profaned Flame wielded by the Irithyllian witches. Lonely Yhorm became a Lord of Cinder to put
+                        the Profaned Flame to rest, knowing full well that those who spoke of him as lord were quite
+                        insincere. The Profaned Capital was consumed by fire after Yhorm the Giant became a Lord of
+                        Cinder. The fire, born of the sky, is said to have incinerated naught but human flesh. The
+                        Profaned Flame was triggered by the curse of these women, relatives of a certain oracle, but
+                        despite their culpability, they went on living, without any cares.
+                        <br>
+                        Coal used for weapon infusion. Remnants of the fire that burned down the Profaned Capital,
+                        preserved in an icy skull. Give to the blacksmith in the shrine to allow the use of gems for
+                        dark, blood, and Hollow infusion.
+                        <br>
+                        The Darksign and the Eclipse
+                        The Darksign is a symbol of the undead. Those cursed with it are reborn after death and
+                        eventually lose their minds and turn hollow. This is a reason why undead are driven from their
+                        homes as they eventually go mad. Horace is a sample of this, originally being a member of the
+                        Blue Sentinals covenant and stated friend of Anri, but later being found attacking anyone he
+                        meets.
+                        <br>
+                        The eclipse appears in Lothric Castle, and several other areas, after Lothric Castle is
+                        unlocked. It may be a sign called by the fading flame, and looks a bit like a Darksign.
+                        *Speculation* Maybe it's calling Undead to link it and prolong its life. Maybe its symbolizing
+                        that the Fire is fading and the Age of Fire is ending.
+                        <br>
+                        <br>
+                        <br>
+                        Multiple Firelink Shrines
+                        <br>
+                        <br>
+                        <br>
+                        "Sword missing from the shrine bonfire. Thrust into the shrine bonfire to restore its power and
+                        enable travel between bonfires. This sword is only bequeathed to chosen ash, as judged by the
+                        Iudex, who awaits the arrival of ash as a scabbard"
+                        <br>
+                        When you start the game you find yourself in the Cemetery of Ash and venture to Firelink Shrine.
+                        In this Firelink Shrine you must insert the Coiled Sword into the bone and ash pile of the
+                        bonfire to be able to use it. When you use the Firelink bonfire to warp to Lothric for the first
+                        time you are warped to an altar with a basin and a broken coiled sword.
+                        <br>
+                        Fragment of the coiled sword of a bonfire which served its purpose long ago. Returns caster to
+                        last bonfire used for resting, or to the bonfire in Firelink Shrine. Can be used repeatedly.
+                        Bonfires are linked to one another irreversibly, retaining their affinity long after their
+                        purpose is exhausted
+                        <br>
+                        Later on in the game you come across an area identical to Firelink called Untended Graves. Here
+                        you find a dark shrine with a Fragment of the Coiled Sword in it.
+                        <br>
+                        Towards the end of the game on your journey to the Kiln, you are warped to one more copy of
+                        Firelink called the Flameless Shrine. The Flameless Shrine is in even worse condition than
+                        Untended Graves and it is here you find a bonfire that warps you to the Kiln.
+                        <br>
+                        <br>
+                        <br>
+                        THEORY 1
+                        <br>
+                        There are three versions of firelink shrine. The first is where we appear, good old fire link,
+                        its filled with friendly npcs, Andre, handmaid, firekeeper...the rest of those lovable guys.
+                        Once the consumed king is defeated, we are given access to an illusory wall that leads us to
+                        untended graves. Suprisingly, this area is a mimic of firelink. Except its consumed by the
+                        abyss, no sky, all blackness. Is this a similar building? No its not. Messages you leave in
+                        firelink will match messages found in the "dark" firelink accessed through untended graves. As
+                        well as items brought over by npcs, like the scrolls of Orbeck, or the pots and goods of
+                        Greirat. It is the same building. But how? Speculation time!
+                        <br>
+                        Time travel. This may sound odd, but forces in souls game have enabled time travel, like the
+                        memory areas in dark souls 2. This dark version is firelink of the present. This is also why you
+                        have to warp to Lothric, or time travel to Lothric by the bonfire as the actually current state
+                        of the bonfire is well, its dead, consumed by the abyss. Im going to speculate harder by
+                        suggesting that time power is how the bonfire heals and why armor is "repaired" when you rest as
+                        well as enemies being resetted. It can reset certain aspects of the world. But its not exactly
+                        reversing everything, as certain things remain changed. This theory has holes as well, activated
+                        levers stay activated, and certain enemies stay killed if killed...etc.
+                        <br>
+                        Anyway, back on topic, still with time travel. So the dark shrine may be our shrine, but in the
+                        future. Ive tried skipping Orbeck and Greirat, just murdering Emma and getting there, and the
+                        scrolls and pots in my previous play through were not there. When I found them, the items they
+                        left stayed there. We even have a corpse of a fire keeper that drops the eyes of a fire keeper,
+                        which is hidden in an illusory wall where the nun would stay. So basically the firelink from the
+                        past is trying to save itself and prevent its current, dark shrine state. As to why the handmaid
+                        is still alive, I have no idea. Maybe she hid with an item, maybe she killed them all. Maybe she
+                        was spared as she is just an old lady.
+                        <br>
+                        Then we have the next flame. The one that takes us to the final boss. Its a ruined version of
+                        firelink, this one is damaged with up with many collapsed pathways. Upon exiting it we find
+                        lothric and a strange dark, sort of night atmosphere. We seem to have a crazy eclipse going on,
+                        and it looks like part of the earth was torn off or ripped out and sent somewhere else. The
+                        Lothric castle has parts of it collapsed and sloped, like some crazy earthquake or event
+                        occured. This could be firelink of the future. Please note that while the dark firelink shrine
+                        is covered in an abyss, the rest of Lothric is fine. This is because the firelink shrine,
+                        birthplace of the powerful fire, is a special ground. Its paranormal. As the fire weakens and
+                        dies, its surrounding area goes to hell. It is swallowed in an abyss and seems to be separated
+                        from the world(dark shrine). This gets worse in the future as now the firelink and its
+                        surrounding area seems to be caught in a crazy cataclysm(final area). Its become some vortex
+                        that sucks its surroundings to where ever it came from, though very slowly. More speculation!
+                        this vortex converges the surrounding lands into the source of the flame. The thing we actually
+                        link. Think of it like this, the fire is hurting and its trying to pull back to safety because
+                        of the pain. as everything converges, the source is revealed, and the champion of ash may
+                        fullfill his duty, link it, prolong its life in our world of plane, and change the future,
+                        extending the age of fire.
+                        <br>
+                        <br>
+                        <br>
+                        THEORY2
+                        <br>
+                        <br>
+                        <br>
+                        That was wild and filled with speculation, sorry bout that, here is a shorter theory! Another
+                        possibility, is a parallel world, an alternate universe of sorts. We know that undead keep
+                        reviving. Hawkwood says it himself that they " cant die properly". But why does Hawkwood die
+                        properly when we kill him? Why does killing Aldrich with Anri, have no influence on the Aldrich
+                        of our world. ( Killing him w Anri will not mean that the one we have to face will be dead, you
+                        have to kill the one in your world, regardless if you helped Anri slay him ). I think to each
+                        undead, the fire presents a "parallel world". Killing an npc will revive them in their world,
+                        but in our world, they will have lost "connection" and appear "dead". Npcs very connected to our
+                        world, like the firekeeper, will revive just like monsters, if killed. All the others are like
+                        other players, with a weaker, sort of temporary connection.
+                        <br>
+                        Anyway, theory two is that the first flame is fading, so fire from other "worlds" all connected
+                        to it, help it out. The first one is the fire that called our particular character from the
+                        cemetary. Hawkwood and Anri were possibly called by different flames from different parallel
+                        worlds. This first flame needs attention as its like the heart of all the other flames, they
+                        need it and stuff. The dark version of firelink shrine is a fire that faded, a possible fate
+                        awaiting the fires of other worlds if the main one isnt fixed. The third one, the "kiln of the
+                        first flame". Is a parallel world that serves as a "doorway" or entrance to the main flame. Its
+                        the world where the power of fire is strongest, and whe whole place is falling apart as the main
+                        one is weakening. We travel there to fix the thing.
+                        <br>
+                        <br>
+                        <br>
+                        The Bell And Resurrection
+                        <br>
+                        <br>
+                        <br>
+                        When the Flame is about to burn out a bell is wrung awakening the Lords of Cinder and the
+                        Unkindled.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="full-lores">
+            <div class="title">
+                <h1>Sekiro: Shadows die twice</h1>
+            </div>
+            <div class="details">
+                <span>
+                    The time is Sengoku
+                    Beyond the peaks of deep snow, lies the land of Ashina
+                    Sword Saint Ashina Isshin, who in but a generation conquered the realm and begun the country in
+                    the Northern Regions
+                    But that Ashina is now in mortal danger
+                    <br>
+                    <br>
+                    Isshin’s grandson, and Ashina’s Commander, despairing at their plight secretly told the allies
+                    “There are no usual means left by which to protect Ashina”
+                    “This right here is when we need that prince”
+                    <br>
+                    <br>
+                    And thus the prince is kidnapped
+                    And a prince he is in name only, without a family or vassals,
+                    but for one single ninja.
+                    <br>
+                    <br>
+                    This is a tale of stranding,
+                    loneliness between Lord and Retainer.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="popup-menu" id="menu_user">
+        <div class="container-popup">
+            <div class="popup-image">
+                <a href="perfil.html">
+                    <img src="img/user-solaire.png" alt="">
+                </a>
+                <div class="username">
+                    <b id="usr_nome"></b>
+                </div>
+            </div>
+            <div class="options-popup">
+                <div class="popup-option">
+                    <a href="perfil.html">
+                        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                            viewBox="0 0 24 24" aria-labelledby="personIconTitle" stroke="#ffffff" stroke-width="1"
+                            stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                            <title id="personIconTitle">Person</title>
+                            <path
+                                d="M4,20 C4,17 8,17 10,15 C11,14 8,14 8,9 C8,5.667 9.333,4 12,4 C14.667,4 16,5.667 16,9 C16,14 13,14 14,15 C16,17 20,17 20,20" />
+                        </svg>
+                        <span>Geral</span>
+                    </a>
+                </div>
+                <div class="popup-option">
+                    <a href="configuracoes.html">
+                        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                            viewBox="0 0 24 24" aria-labelledby="settingsIconTitle" stroke="#fff" stroke-width="1"
+                            stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#fff">
+                            <title id="settingsIconTitle">Settings</title>
+                            <path
+                                d="M5.03506429,12.7050339 C5.01187484,12.4731696 5,12.2379716 5,12 C5,11.7620284 5.01187484,11.5268304 5.03506429,11.2949661 L3.20577137,9.23205081 L5.20577137,5.76794919 L7.9069713,6.32070904 C8.28729123,6.0461342 8.69629298,5.80882212 9.12862533,5.61412402 L10,3 L14,3 L14.8713747,5.61412402 C15.303707,5.80882212 15.7127088,6.0461342 16.0930287,6.32070904 L18.7942286,5.76794919 L20.7942286,9.23205081 L18.9649357,11.2949661 C18.9881252,11.5268304 19,11.7620284 19,12 C19,12.2379716 18.9881252,12.4731696 18.9649357,12.7050339 L20.7942286,14.7679492 L18.7942286,18.2320508 L16.0930287,17.679291 C15.7127088,17.9538658 15.303707,18.1911779 14.8713747,18.385876 L14,21 L10,21 L9.12862533,18.385876 C8.69629298,18.1911779 8.28729123,17.9538658 7.9069713,17.679291 L5.20577137,18.2320508 L3.20577137,14.7679492 L5.03506429,12.7050339 Z" />
+                            <circle cx="12" cy="12" r="1" />
+                        </svg>
+                        <span>Configurações</span>
+                    </a>
+                </div>
+                <div class="popup-option">
+                    <a href="Suporte.html">
+                        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                            viewBox="0 0 24 24" aria-labelledby="chatAltIconTitle" stroke="#ffffff" stroke-width="1"
+                            stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                            <title id="chatAltIconTitle">Chat</title>
+                            <path d="M13,17 L7,21 L7,17 L3,17 L3,4 L21,4 L21,17 L13,17 Z" />
+                        </svg>
+                        <span>Suporte</span>
+                    </a>
+                </div>
+            </div>
+            <div class="logoff-popup">
+                <div class="popup-option">
+                    <a href="#" onclick="logoff()">
+                        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                            viewBox="0 0 24 24" aria-labelledby="exitIconTitle" stroke="#a1261b" stroke-width="1.5"
+                            stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#a1261b">
+                            <title id="exitIconTitle">Exit</title>
+                            <path d="M18 15l3-3-3-3" />
+                            <path d="M11.5 12H20" />
+                            <path stroke-linecap="round" d="M21 12h-1" />
+                            <path d="M15 4v16H4V4z" />
+                        </svg>
+                        <span>Sair</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
+
+<script>
+    var slideIndex = 0;
+    fn_carrossel();
+    verificar_autenticacao();
+
+    function fn_carrossel() {
+
+        let carousel = document.getElementsByClassName("slide-dark-item");
+        // let posicao = document.getElementsByClassName("dot");
+        for (let i = 0; i < carousel.length; i++) {
+            carousel[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > carousel.length) { slideIndex = 1 }
+        // for (let i = 0; i < posicao.length; i++) {
+        //     posicao[i].className = posicao[i].className.replace(" active", "");
+        // }
+        carousel[slideIndex - 1].style.display = "block";
+        // posicao[slideIndex - 1].className += " active";
+        setTimeout(fn_carrossel, 5000);
+    }
+</script>
