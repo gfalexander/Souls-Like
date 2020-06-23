@@ -197,6 +197,7 @@ height: 15px;
 
 .lore{
     float: left;
+    margin-top: 60px;
 }
 
 .content-lores{
@@ -365,6 +366,7 @@ height: 15px;
     border: 1px solid #a1261b;
     background: inherit;
     color: inherit;
+    cursor: pointer;
     border-radius: 20% 0px 0px 0px;
     margin-left: 0.25%;
 }
@@ -377,6 +379,7 @@ height: 15px;
     background: inherit;
     color: inherit;
     margin-bottom: 10px;
+    cursor: pointer;
     margin-left: 27.5%;
     border-radius: 0px 20% 0px 0px;
 }
@@ -386,6 +389,7 @@ height: 15px;
     font-size: 22pt;
     border: 1px solid #a1261b;
     background: inherit;
+    cursor: pointer;
     color: inherit;
     border-radius: 5px 5% 5px 5px;
 }
@@ -407,7 +411,7 @@ height: 15px;
 }
 
 .popup-menu{
-    position: absolute;
+    position: fixed;
     width: 210px;
     height: 400px;
     background: #262626;
@@ -455,3 +459,128 @@ height: 15px;
     margin-bottom: 0;
     color: #a1261b;
 }
+
+.register-content{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+
+#form_cadastro{
+    float: left;
+    border: 1px solid #262626;
+    background: transparent;
+    border-radius: 5%;
+    margin: 6% 30%;
+    width: 40%;
+    height: 75%;
+}
+
+#form_cadastro .register-container .button-field button{
+    border-radius: 5%;
+    width: 85%;
+}
+
+#form_cadastro .register-container .button-field {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.use-terms{
+    margin-left: 5%;
+    margin-left: 9%;
+    margin-top: 5%;
+    width: 85%;
+}
+
+.use-terms a{
+    color: #a1261b;
+    text-decoration: underline;
+}
+
+.user-register{
+    width: 45px;
+}
+
+.image-register{
+        margin-left: 40%;
+        border-radius: 100%;
+}
+
+.image-register img{
+    width: 100px;
+    border: 1px solid #a1261b;
+    border-radius: 100%;
+}
+
+.full-npcs{
+    margin: 15px 75px 0px 105px;
+    border: 1px solid #262626;
+    height: auto;
+}
+
+.npc-details{
+    display: flex;
+}
+
+.full-npcs .npc-details a{
+    margin: 4% 4% 4% 4%;
+}
+
+.full-npcs .npc-details .maiden-npc{
+    width: auto;
+}
+
+.full-npcs .npc-details .maiden-npc .image{
+    float: left;
+}
+
+.full-npcs .npc-details .maiden-npc .image img{
+    width: 300px;
+}
+
+/* .full-npcs:nth-child(3){
+    margin-top: 0;
+    border: 0;
+    background: #262626;
+}
+
+.full-npcs:nth-child(3) .content-editable textarea{
+    border: 0;
+    background: #161616;
+    width: 79.3%;
+    color: inherit;
+    outline: none;
+    font-size: 14pt;
+}
+
+.full-npcs:nth-child(3) .container-img{
+    float: left;
+    display: grid;
+    margin-right: 10px;
+    margin-left: -15%;
+    text-align: center;
+}
+
+.full-npcs:nth-child(3) .container-img img{
+    border-radius: 100%;
+    border: 0.2px solid #a1261b;
+}
+
+.full-npcs:nth-child(3) .container-img span{
+    margin-left: -05%;
+    margin-top: 10px;
+}
+
+.full-npcs:nth-child(3) .buttons{
+    float: right;
+    margin-right: 10px;
+}
+
+.full-npcs:nth-child(3) .buttons input[type = submit]{
+    border: 0.2px solid #a1261b;
+    background: transparent;
+    color: inherit;
+    padding: 10px;
+} */

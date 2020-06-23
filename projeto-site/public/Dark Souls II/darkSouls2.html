@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls II</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../funcoes.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="">
+                    <img src="../img/bonfireic1.png" alt="">
+                    <span>Soul<span class="atual">site</span></span>
+                </a>
+            </div>
+            <div class="search-bar">
+                <div>
+                    <input type="text">
+                    <button>search</button>
+                </div>
+            </div>
+            <div class="usuario" id="usuario">
+                <a href="../login.html">Entrar</a>
+                <a href="../cadastro.html">Cadastrar</a>
+            </div>
+            <div class="usuario-online" id="usr_online">
+                <a onclick="fn_menu_usuario()">
+                    <img src="../img/user-solaire.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Historia.html" class="atual">História</a></li>
+                    <a href="../Suporte.html" id="no_log_contact">Suporte</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lore">
+        <div class="full-lores">
+            <div class="title">
+                <h1>Dark Souls II</h1>
+            </div>
+            <div class="details">
+                <span>
+                    <p>
+                        <span>
+                            "This is a limbo. A link between Drangleic and the outer world.
+                        </span>
+                        <br>
+                        <span>
+                            Fair traveller, I know that you must have a story.
+                        </span>
+                        <br>
+                        <span>
+                            Why else would you visit such a place?
+                        </span>
+                        <br>
+                        <span>
+                            This lost, decayed kingdom."
+                        </span>
+                    </p>
+                    <p>
+                        <span>
+                            You start the game as an accursed undead, mysteriously transported to a place called
+                            things betwixt. Hollowing and lost you find yourself at a quiet little cabin with Old
+                            Ladies sitting in it. The Old Ladies give you a task bringing purpose to your hollowing
+                            mind.
+                        </span>
+                    </p>
+                    <p>
+                        <span>"An Undead has come to play. Heh heh…</span>
+                        <br>
+                        <span>They all end up here, all the ones like you.</span>
+                        <br>
+                        <span>You spoke to that kind old dear, didn't you?</span>
+                        <br>
+                        <span>Heh heh…</span>
+                        <br>
+                        <span>You're finished.</span>
+                        <br>
+                        <span>You'll go Hollow.</span>
+                        <br>
+                        <span>Yes, you will become one of them.</span>
+                        <br>
+                        <span>Hollows prey upon men, feast upon their souls.</span>
+                        <br>
+                        <span>This is the fate of the cursed. Heh heh heh…</span>
+                    </p>
+                    <p>
+                        <span>All people come here for the same reason.</span>
+                        <span>To break the curse.</span>
+                        <span>You're no different, I should think?</span>
+                        <span>Hmm… doesn't stand a chance.</span>
+                        <span>Well, you never know!</span>
+                        <span>Go through the door and trot along to the kingdom.</span>
+                        <span>But remember, hold on to your souls.</span>
+                        <span>They're all that keep you from going Hollow.</span>
+                        <span>Oh, I'll fool you no longer…</span>
+                        <span>You'll lose your souls…All of them. Over and over again</span>
+                    </p>
+                    <p>
+                        <span>You must go, on a journey without rest.</span>
+                        <span>Well…I suppose, if you find yourself at an impasse…</span>
+                        <span>But if your will is yet unbroken, then you may return here.</span>
+                        <span>To start again, with a clean slate…</span>
+                        <span>Hah hah hah…"</span>
+                    </p>
+                    <p>
+                        <span>It is revealed that the Old Ladies were once Fire Keepers, by their
+                            Housekeeper.</span>
+                        <span>"The old women were keepers of the fire.</span>
+                        <span>But now, the fire shows signs of fading…</span>
+                        <span>And the kingdom…is beset by Hollows."</span>
+                    </p>
+
+
+                    <p>
+                        <span>
+                            Filled with purpose you set out into the Kingdom of Dragleic, searching for a cure of
+                            the
+                            curse.
+                            After traversing through the remains of an Archtree, you find yourself in a decrepit
+                            town
+                            called
+                            Majula where a Lone woman in Emerald is tending a bonfire. She Greets you with a
+                            question.
+                        </span>
+                    </p>
+
+                    <p>
+                        <span>"Are you...the next monarch?</span>
+                        <span>Or... Merely a pawn of fate?</span>
+                        <span>Bearer of the curse... I will remain by your side.</span>
+                        <span>Till this frail hope shatters... Take this with you. May it ease your journey.</span>
+                        <span>Go on, and see the King.</span>
+                        <span>He who made Drangleic what it once was; he who peered at the essence of the
+                            soul.</span>
+                        <span>King Vendrick."</span>
+                    </p>
+
+
+
+
+                    <p>
+                        <span>
+                            This question seems to parallel Frampt's search in Dark Souls 1. The Emerald Herald
+                            tasks you
+                            with a new mission.
+                        </span>
+                    </p>
+
+                    <p>
+                        <span>"Bearer of the curse, seek misery.</span>
+                        <span>For misery will lead you to greater, stronger souls.</span>
+                        <span>You will never meet the King with a soul so frail and pallid.</span>
+                    </p>
+                    <p>
+                        <span>Seek those whose names are unutterable, the four endowed with immense souls.</span>
+                        <span>Their souls will serve as beacons.</span>
+                        <span>Once you have found them, return here to me.</span>
+                        <span>So that hope will not fade away.</span>
+                    </p>
+                    <p>
+                        <span>Bearer of the curse... Seek souls. Larger, more powerful souls.</span>
+                        <span>Seek the King, that is the only way.</span>
+                        <span>Lest this land swallow you whole... As it has so many others."</span>
+                    </p>
+
+
+
+
+                    <p>
+                        <span>Before you leave town, others inform you on these unutterable ones.</span>
+                    </p>
+
+                    <p>
+                        <span>"There are four beings in this land with giant souls.</span>
+                        <span>And wherever you go from here, you'll sooner or later come up against them.</span>
+                        <span>Each has a powerful soul, and a terrible curse…</span>
+                        <span>If that frightens you, then you ought to just give up right now. Like I have. Hah hah
+                            hah"</span>
+                    </p>
+                    <p>
+                        <span>"Are you going to see the Old Ones?</span>
+                        <span>Those four who have grown so incredibly ancient.</span>
+                        <span>They must have sprouted quite a thick coat of moss by now.</span>
+                        <span>For heaven's sake, no-one even knows their names anymore!</span>
+                        <span>Imagine that! Hee hee hee hee!</span>
+                        <span>Yes…Nothing like yourself.</span>
+                        <span>For you…have a most pleasant scent, that grows nicer with each passing day.</span>
+                    </p>
+
+
+                    <p>
+                        <span>Once, people tried to round up the Undead and hide them away from the world.</span>
+                        <span>They thought that imprisoning the Undead would solve the problem.</span>
+                        <span>They created a towering bastille to contain them, but in the end, it did no
+                            good.</span>
+                        <span>The Lost Sinner lives deep within the bastille.</span>
+                        <span>The fool. Trying to light the First Flame…</span>
+                    </p>
+
+
+                    <p>
+                        <span>Why do people try so hard to be beautiful?</span>
+                        <span>We cats are born beautiful, of course. Hee hee…</span>
+                        <span>The human ego…How many ugly iron castles has it erected?</span>
+                        <span>And they don't even see the folly of their ways.</span>
+                        <span>But that's what makes watching humankind so delightful.</span>
+                        <span>It reminds me of someone who lived long ago.</span>
+                        <span>A vainglorious liar who ended up hurling himself into the flames.</span>
+                        <span>Now he's Ichorous Earth, if I'm not mistaken.</span>
+                    </p>
+
+
+                    <p>
+                        <span>You've seen that gaping hole here?</span>
+                        <span>Well, there's nasty little vermin down there.</span>
+                        <span>Although who you seek is even further below.</span>
+                        <span>And has been down there for a very, very long time.</span>
+                        <span>He's plumb Rotten by now, I'm sure! Hee hee hee…</span>
+                    </p>
+
+
+                    <p>
+                        <span>Men develop the most peculiar fascinations.</span>
+                        <span>Sometimes their fascinations seem to take control.</span>
+                        <span>Till there's very little man left. Hee hee hee…</span>
+                        <span>Oh, it's like that awful traitor long ago.</span>
+                        <span>He coveted what he did not have, and it drove him mad.</span>
+                        <span>What a curious conundrum. Hee hee hee…</span>
+                        <span>The Writhing Ruin keeps searching as we speak.</span>
+                        <span>Searching for its heart's desire."</span>
+                    </p>
+
+
+                    <p>
+                        <span>
+                            With rumors in hand and a direction to go you, seek out these four Great Souls. A mass
+                            of bodies
+                            in a poisoned gulch, an experimental spider in a bright cove, a forgotten prisoner in an
+                            abandoned prison, and a fallen king in a sinking lava filled castle. Upon Gathering the
+                            Final
+                            Soul You encounter a stranger. He implores you to continue your quest.
+                        </span>
+                    </p>
+
+                    <p>
+                        <span>"No one has come this far, not for a very long while.</span>
+                        <span>Young Hollow do you wish to shed this curse?</span>
+                        <span>Then accept the fate of your ilk, and face the trials that await you.</span>
+                        <span>Unless, you have already joined the crestfallen.</span>
+                    </p>
+
+                    <p>
+                        <span>Young Hollow, there are but two paths. Inherit the order of this world, or destroy
+                            it.</span>
+                        <span>But only a true monarch can make such a choice.</span>
+                        <span>Very few, indeed, have come even this far.</span>
+                        <span>And yet, your journey is far from over.</span>
+                        <span>Half-grown Hollow, have you what it takes, truly?</span>
+                    </p>
+
+
+                    Young Hollow, seek after Vendrick. <br>
+                    He who almost became a true monarch. <br>
+                    Vendrick is certain to guide your way. <br>
+                    Fledgeling Hollow, may we meet again." <br>
+                    <br>
+                    <br>
+                    <br>
+                    Once you have gathered these four Great Souls a new path is opened to find the King. On your
+                    path to the castle you meet the Emerald Herald once again.
+                    <br>
+                    <br>
+                    "You have acquired the soul of an Old One. <br>
+                    That is more than most Undead can say.
+                    <br>
+                    The soul and the curse are one and the same. <br>
+                    Your soul has grown stronger still. <br>
+                    I only hope it brings you what you wish. <br>
+                    <br>
+                    Proceed, bearer of the curse. <br>
+                    It is the only choice left to you. <br>
+                    <br>
+                    You are blessed with a myriad of souls. <br>
+                    Bearer of the curse, make your way to the castle. <br>
+                    <br>
+                    This castle is isolated. <br>
+                    But nonetheless, you must forge on. <br>
+                    To bring an end to your journey…and mine. End your journey…and mine." <br>
+                    <br>
+                    <br>
+                    Upon entering the castle you are greeted by a confused shade. <br>
+
+                    "Who are you… <br>
+                    And by whose permission do you stand before me? <br>
+                    This castle is the domain of King Vendrick. Is your trespass intentional? <br>
+                    … <br>
+                    His Highness…Where has he gone? <br>
+                    <br>
+                    You are a guest of our castle. I am the Chancellor, Wellager. <br>
+                    Do you seek an audience with my Lord, King Vendrick? <br>
+                    Unfortunately, His Highness is absent. <br>
+                    My Lord…The King has… <br>
+                    The Queen…Has taken him… <br>
+                    <br>
+                    <br>
+                    My Lord made magnificent findings on souls… An accomplishment for the ages… <br>
+                    He vanquished the Four Great Ones… And built this kingdom upon their souls. <br>
+                    Our King has watched over this land… Since ages long, long ago… <br>
+                    King Vendrick…We must fight back… Or the Giants will take Drangleic…<br>
+                    <br>
+                    <br>
+                    The King had a dear Queen, a woman of unparalleled beauty.<br>
+                    Long ago, the Queen came to us, alone, from a faraway land.<br>
+                    She warned our Lord of the looming threat across the seas…of the Giants.<br>
+                    The King crossed the ocean… And defeated the Giants, with the Queen at his side.<br>
+                    <br>
+                    <br>
+                    The King commandeered their power… And created the Golems. <br>
+                    With the Golems, the king created this castle. <br>
+                    To celebrate victory… And to show his love, his gratitude to his Queen…<br>
+                    <br>
+                    <br>
+                    The Queen…Brought peace… to this land, and to her King.<br>
+                    A peace so deep…it was like…<br>
+                    The Dark…<br>
+                    <br>
+                    <br>
+                    Is this…some sort of a dream? <br>
+                    ……<br>
+                    Where am I? What has happened to our castle…<br>
+                    Who are you…<br>
+                    And by whose permission do you stand before me?"<br>
+                    <br>
+                    <br>
+
+
+
+                    As you venture further in the Castle you encounter the Queen of Drangleic, Nashandra.<br>
+                    <br>
+                    <br>
+
+                    "You have fought admirably on your journey, cursed Undead.<br>
+                    I am Nashandra, Queen of Drangleic.<br>
+                    A true monarch carries the weight of their souls.<br>
+                    The last king of this land, King Vendrick, as he was called…<br>
+                    He was less of a king than you might imagine.<br>
+                    He found the strength to rule his people, and when the Undead were born, cursed…<br>
+                    He found more strength, to face them.<br>
+                    But in the end, he never took the true throne.<br>
+                    <br>
+                    Visit Vendrick.<br>
+                    We have no need for two rulers…"<br>
+                    <br>
+                    <br>
+                    <br>
+
+
+                    Once again you meet A Stranger who has a monstrous appearance.
+                    <br>
+                    <br>
+                    "Heheh, I believe we've been acquainted.<br>
+                    Young Hollow, conqueror of fear.<br>
+                    What drives you so, to overcome this supposed curse?<br>
+                    <br>
+                    Life is brilliant. Beautiful. It enchants us, to the point of obsession.<br>
+                    Some are true to their purpose, though they are but shells, flesh and mind.<br>
+                    One man lost his own body, but lingered on, as a head.<br>
+                    Others chase the charms of love, however elusive.<br>
+                    What is it that drives you?<br>
+                    <br>
+                    Once, the Lord of Light banished Dark, and all that stemmed from humanity.<br>
+                    And men assumed a fleeting form.<br>
+                    These are the roots of our world.<br>
+                    Men are props on the stage of life, and no matter how tender, how exquisite...<br>
+                    A lie will remain a lie.<br>
+                    Young Hollow, knowing this, do you still desire peace?"<br>
+                    <br>
+
+                    <br>
+                    He sumuarizes many of the NPCs storylines and even hints at how the Chosen Undead was Lied
+                    to.<br>
+                    Then he proceeds to question your task, before leaving.<br>
+                    <br>
+                    <br>
+                    " Vendrick, the near-true monarch, is here, and not far off.<br>
+                    But what is a king?<br>
+                    You, neither born with greatness, nor granted it by the fates.<br>
+                    What is it that you seek?<br>
+                    You cannot even say yourself.<br>
+                    We shall meet again, young Hollow."<br>
+                    <br>
+                    <br>
+
+                    Upon Entering the Undead Crypt you are beseached by a Grave Warden.<br>
+                    <br>
+                    <br>
+                    " Halt.<br>
+                    Human. Do not produce light.<br>
+                    Light, and all those who bear it, are unwelcome in this place.<br>
+                    <br>
+                    I am Agdayne. Guardian of the crypt.<br>
+                    Countless dead rest here in peace. Cradled by the comfort of dark.<br>
+                    Light only agitates. We have no need for it here.<br>
+                    <br>
+                    I am a Fenito. We weave death, and watch over the dead.<br>
+                    This task was granted to me by the one who gave us the first death.<br>
+                    Countless souls rest here. Some of them from ages long ago.<br>
+                    Some were rich, others poor. Some wise, some dull, but now, they are all just dead.<br>
+                    <br>
+                    This place is welcome to all, provided due reverence is shown.<br>
+                    Death is equitable, accepting. We will all, one day, be welcomed by her embrace.<br>
+                    Tell me what you desire. Show me reverence, and I will lend you my hand.<br>
+                    <br>
+                    In the past, humans were one with the dark.<br>
+                    The former King of Light…He feared humans. Feared that they would usher in an age of dark.<br>
+                    How queer, you humans. How you go on, never separating truth from fiction.<br>
+                    <br>
+                    Did you come for him? The one called Vendrick.<br>
+                    You will find him deeper inside.<br>
+                    Many castle servants and the like have come to fetch their lord.<br>
+                    But they rest here now, put to death by the King's own guards.<br>
+                    Perhaps he's not in the mood for company."<br>
+                    <br>
+                    <br>
+                    Further in you finally meet Vendrick who has hollowed. It us up to you to either Slay him and
+                    or<br>
+                    take his ring. Upon Leaving the Grave Warden mentions.<br>
+                    <br>
+                    <br>
+                    "You've met the King, have you?<br>
+                    Life is never easy, never fair. Even more so, on this path you've chosen.<br>
+                    May you find your peace one day"<br>
+                    <br>
+                    <br>
+                    <br>
+                    As you retrace your footsteps, you find yourself once again in Queen Nashandra's Presence.<br>
+                    "Brave Undead, seek the throne.<br>
+                    Follow the symbol of the monarch, and do what must be done."<br>
+                    <br>
+                    <br>
+                    <br>
+                    If you stop and speak to the Emerald Herald She tells you.<br>
+                    <br>
+                    <br>
+                    "This ring is the symbol of the King.<br>
+                    Use it to gain passage, through the King's Gate… …and venture to the far east…<br>
+                    Bearer of the curse, if you are to be the next monarch.<br>
+                    Then, one day, you will walk those grounds… …without really knowing why."<br>
+                    <br>
+                    <br>
+                    <br>
+                    With a new quest in hand you seek out the symbols of the king. You find yourself in front of
+                    a<br>
+                    Large Keep. In this Keep You see that many experiments have taken place here and even
+                    encounter<br>
+                    a caged Dragon. You find yourself heading up an elevator into a a place filled with flying
+                    Dragons. There you encounter the Emerald Herald.<br>
+                    "Bearer of the curse.<br>
+                    Long have I awaited one such as you, one who might shatter the shackles of fate.<br>
+                    One who can set me free.<br>
+                    Bearer of the curse, it was my own manifestation that led you here.<br>
+                    The ancient dragon has watched over the world for aeons past.<br>
+                    Take this. Do not resist. The dragon welcomes you."<br>
+                    <br>
+                    <br>
+                    <br>
+                    The Emerald Herald Gives you an Aged Feather as a Gift. You tread further into this Dragon
+                    Aerie<br>
+                    and cross a rope bridge. At the Bonfire in what is called the Dragon Shrine you encounter
+                    the<br>
+                    Stranger once again.
+                    <br>
+                    <br>
+                    "Young Hollow.<br>
+                    How you grapple, without falter, with this dreadfully twisted world.<br>
+                    <br>
+                    Peace grants men the illusion of life.<br>
+                    Shackled by falsehoods, they yearn for love, unaware of its grand illusion.<br>
+                    Until, the curse touches their flesh.<br>
+                    We are bound by this yoke.<br>
+                    As true as the Dark that churns within men.<br>
+                    <br>
+                    All men trust fully the illusion of life.<br>
+                    But is this so wrong?<br>
+                    A construction, a facade, and yet...<br>
+                    A world full of warmth and resplendence.<br>
+                    Young Hollow, are you intent on shattering the yoke, spoiling this wonderful falsehood?<br>
+                    <br><br><br>
+                    ...<br>
+                    <br><br><br>
+                    I am Aldia.<br>
+                    I sought to shed the yoke of fate, but failed.<br>
+                    Now, I only await an answer.<br>
+                    Seek the throne.<br>
+                    Seek light, Dark and what lies beyond..."<br>
+                    <br>
+                    <br>
+                    <br>
+                    Further on in the Shrine you encounter the Ancient Dragon. Who gifts you with the Ashen Mist
+                    Heart, allowing you to interact with the memories of the hollowed or departed.<br>
+                    <br>
+                    <br>
+                    "The murk shifts and stirs.<br>
+                    Yet another stands before us…<br>
+                    Then so be it.<br>
+                    For the curse of life, is the curse of want.<br>
+                    And so, you peer…<br>
+                    Into the fog, in hope of answers."<br>
+                    <br>
+                    <br>
+                    <br>
+                    If you see the Queen after the Ancient Dragon. She tells you,<br>
+                    <br>
+                    "Brave Undead, what did that dragon tell you?<br>
+                    That thing is a prop, a false deity. Don't be fooled, my Undead.<br>
+                    <br>
+                    Seek the forest, you, where those wretched Giants slumber."<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    Following Aldia's, Nashandra's and the Ancient Dragons Advice you seek out the memories of
+                    the<br>
+                    Giants and Vendrick. The Giant's show the devastation they wrought on Drangleic, While
+                    Vendrick's memories allow you to understand him.<br>
+                    <br>
+                    <br>
+                    "Seeker of fire, coveter of the throne.<br>
+                    I am Vendrick, ruler of Drangleic.<br>
+                    <br>
+                    I am no king. I am more fit to be a jester…<br>
+                    I was unaware of my own blindness.<br>
+                    We are feeble vessels, with feebler souls.<br>
+                    We would cast aside the prop of life, only to face greater hardship.<br>
+                    Are you another such fool, or something more?<br>
+                    <br>
+                    Seeker of fire, deliverer of crowns.<br>
+                    What do you see in the flames?<br>
+                    Find the crowns, and your own answers.<br>
+                    The crowns hold the strength of lords from time long past.<br>
+                    Seek adversity.<br>
+                    As befits you, seeker of fire, coveter of the throne.<br>
+                    <br>
+                    I fail to see your design, young moth.<br>
+                    But I see very little, these days…"<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    With a new task in hand it is time to seek out the other fallen kings and their crowns. Once
+                    you<br>
+                    have Acquired the Crown's from the fallen Monarch's Vendrick will Give you his Blessing after
+                    he<br>
+                    gives you his insight.<br>
+                    <br>
+                    <br>
+                    "Seeker of fire, conqueror of Dark.<br>
+                    I, too, sought fire, once.<br>
+                    With fire, they say, a true king can harness the curse.<br>
+                    A lie. But I knew no better…<br>
+                    Seeker of fire, you know not the depths of Dark within you.<br>
+                    It grows deeper still, the more flame you covet.<br>
+                    Flame, oh, flame…<br>
+                    <br>
+                    I am king of this wretched, unravelled kingdom.<br>
+                    I subdued the Giants, and claimed their strength.<br>
+                    So that I might step closer to fire…<br>
+                    Drangleic will fall, the fire will fade, and the souls of old will reemerge.<br>
+                    With Dark unshackled, a curse will be upon us…<br>
+                    And men will take their true shape…<br>
+                    <br>
+                    Seeker of fire, I see you've subdued another foul creature.<br>
+                    One of the Father of the Abyss' spawn, that confounded quintessence of humanity.<br>
+                    The Abyss once had form, but then dissipated.<br>
+                    And yet, traces of its existence endured.<br>
+                    Each fragment, thirsting for power, spread Dark, with no relent.<br>
+                    My dear Shandra… was one such fragment…<br>
+                    A feeble, tiny thing that thirsted for power more than any other…<br>
+                    Driven by insatiable lust for a worthy vessel.<br>
+                    <br>
+                    Fire came to be, and with it, Disparity.<br>
+                    Heat and cold, life and death, Light and Dark.<br>
+                    Dark was seen as a curse.<br>
+                    Shadow is not cast, but born of fire.<br>
+                    And, the brighter the flame, the deeper the shadow.<br>
+                    Inherit fire, and harness the Dark.<br>
+                    Such is the calling of a true leader…<br>
+                    <br>
+                    One day, fire will fade, and Dark will become a curse.<br>
+                    Men will be free from death, left to wander eternally.<br>
+                    Dark will again be ours, and in our true shape…<br>
+                    We can bury the false legends of yore… Only…<br>
+                    Is this our only choice?<br>
+                    Seeker of fire, coveter of the throne.<br>
+                    Seek strength.<br>
+                    The rest will follow… "<br>
+                    <br>
+                    <br>
+                    <br>
+                    With Vendrick's Blessing in hand it is time to Seek out the Throne. On the Path to the
+                    throne<br>
+                    you find the Emerald Herald once more, where she warns you of Nashandra.<br>
+                    <br>
+                    <br>
+                    "My journey is already complete.<br>
+                    My name is Shanalotte.<br>
+                    The dragon gave me this name, for I was born with none.<br>
+                    I was born of dragons, contrived by men.<br>
+                    By ones who would cozen fate herself… They are the ones who created me.<br>
+                    But they failed. I did not come out as intended.<br>
+                    Fate would not be bested, and men were cursed once again.<br>
+                    If you proceed, Nashandra will come after you.<br>
+                    Knowing that you will take the throne, and link the fire.<br>
+                    She covets the First Flame, and the Great Soul.<br>
+                    Put Nashandra to rest."<br>
+                    <br>
+                    <br>
+                    <br>
+                    As you Venture forth and defeat the Throne Watcher and Defender, You are confronted by
+                    Nashandra.<br>
+                    <br>
+                    <br>
+                    "Brave Undead,<br>
+                    you have proven yourself to me.<br>
+                    Now, be one, with the Dark…"<br>
+                    <br>
+                    <br>
+                    <br>
+                    Once you defeat Nashandra you encounter Aldia. (Note if you do not have Scholar of the First
+                    Sin<br>
+                    or have received Vendrick's Blessing the game defaults to ending 1.) Aldia wishes to test
+                    your<br>
+                    resolve.
+                    <br>
+                    <br>
+                    "Many monarchs have come and gone.<br>
+                    One drowned in poison, another succumbed to flame.<br>
+                    Still another slumbers in a realm of ice.<br>
+                    Not one of them stood here, as you do now.<br>
+                    You, conqueror of adversities.<br>
+                    Give us your answer."<br>
+                    <br>
+                    Once you defeat Aldia you are left with a Choice, accept the world how it is or find a new
+                    path.<br>
+                    <br>
+                    <br>
+                    "I lost everything, but remained here, patiently.<br>
+                    The throne will certainly receive you.<br>
+                    But the question remains...<br>
+                    What do you want, truly?<br>
+                    Light? Dark? Or something else entirely...''<br>
+                </span>
+            </div>
+        </div>
+        <div class="full-npcs">
+            <div class="title">
+                <h1>Friendly NPCs</h1>
+            </div>
+            <div class="npc-details">
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Stone trader Chloanne</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/QcSZ8cF.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Emerald Herald</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/Shanalotteframe.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Sweet Shalquoir</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/o7FjSkDh.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="full-npcs">
+            <div class="title">
+                <h1>Bosses</h1>
+            </div>
+            <div class="npc-details">
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Sir Alonne</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/16 - Sir Alonne.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Velstadt</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/medium.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>The pursuer</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/SotFS_Pursuer.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="full-npcs">
+            <form>
+                <div class="user-point">
+                    <div class="user-type">
+                        <div class="user-container">
+                            <div class="container-img">
+                                <img src="../img/user-solaire.png" alt="" class="img-user">
+                                <span id="topic_user"></span>
+                                <span id="register_user" display="none">Not a user? <a href="../cadastro.html" class="atual">Sign in</a></span>
+                            </div>
+                            <div class="content-editable">
+                                <textarea name="" id="" cols="60" rows="10" placeholder="Acrescente um tópico para esta discussão"></textarea>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="submit" value="Acrescentar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> -->
+        <div class="popup-menu" id="menu_user">
+            <div class="container-popup">
+                <div class="popup-image">
+                    <a href="../perfil.html">
+                        <img src="../img/user-solaire.png" alt="">
+                    </a>
+                    <div class="username">
+                        <b id="usr_nome"></b>
+                    </div>
+                </div>
+                <div class="options-popup">
+                    <div class="popup-option">
+                        <a href="../perfil.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="personIconTitle" stroke="#ffffff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                                <title id="personIconTitle">Person</title>
+                                <path
+                                    d="M4,20 C4,17 8,17 10,15 C11,14 8,14 8,9 C8,5.667 9.333,4 12,4 C14.667,4 16,5.667 16,9 C16,14 13,14 14,15 C16,17 20,17 20,20" />
+                            </svg>
+                            <span>Geral</span>
+                        </a>
+                    </div>
+                    <div class="popup-option">
+                        <a href="../configuracoes.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="settingsIconTitle" stroke="#fff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#fff">
+                                <title id="settingsIconTitle">Settings</title>
+                                <path
+                                    d="M5.03506429,12.7050339 C5.01187484,12.4731696 5,12.2379716 5,12 C5,11.7620284 5.01187484,11.5268304 5.03506429,11.2949661 L3.20577137,9.23205081 L5.20577137,5.76794919 L7.9069713,6.32070904 C8.28729123,6.0461342 8.69629298,5.80882212 9.12862533,5.61412402 L10,3 L14,3 L14.8713747,5.61412402 C15.303707,5.80882212 15.7127088,6.0461342 16.0930287,6.32070904 L18.7942286,5.76794919 L20.7942286,9.23205081 L18.9649357,11.2949661 C18.9881252,11.5268304 19,11.7620284 19,12 C19,12.2379716 18.9881252,12.4731696 18.9649357,12.7050339 L20.7942286,14.7679492 L18.7942286,18.2320508 L16.0930287,17.679291 C15.7127088,17.9538658 15.303707,18.1911779 14.8713747,18.385876 L14,21 L10,21 L9.12862533,18.385876 C8.69629298,18.1911779 8.28729123,17.9538658 7.9069713,17.679291 L5.20577137,18.2320508 L3.20577137,14.7679492 L5.03506429,12.7050339 Z" />
+                                <circle cx="12" cy="12" r="1" />
+                            </svg>
+                            <span>Configurações</span>
+                        </a>
+                    </div>
+                    <div class="popup-option">
+                        <a href="../Suporte.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="chatAltIconTitle" stroke="#ffffff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                                <title id="chatAltIconTitle">Chat</title>
+                                <path d="M13,17 L7,21 L7,17 L3,17 L3,4 L21,4 L21,17 L13,17 Z" />
+                            </svg>
+                            <span>Suporte</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="logoff-popup">
+                    <div class="popup-option">
+                        <a href="#" onclick="logoff()">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="exitIconTitle" stroke="#a1261b" stroke-width="1.5"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#a1261b">
+                                <title id="exitIconTitle">Exit</title>
+                                <path d="M18 15l3-3-3-3" />
+                                <path d="M11.5 12H20" />
+                                <path stroke-linecap="round" d="M21 12h-1" />
+                                <path d="M15 4v16H4V4z" />
+                            </svg>
+                            <span>Sair</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
+
+<script>
+    verificar_autenticacao();
+    // topic_user.innerHTML = login_usuario;
+
+    // if(topic_user.innerHTML == "undefined"){
+    //     register_user.style.display = "block";
+    // }else{
+    //     register_user.style.display = "none";
+    // }
+</script>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Souls</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../funcoes.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+
+            <div class="logo">
+                <a href="">
+                    <img src="../img/bonfireic1.png" alt="">
+                    <span>Soul<span class="atual">site</span></span>
+                </a>
+            </div>
+            <div class="search-bar">
+                <div>
+                    <input type="text">
+                    <button>search</button>
+                </div>
+            </div>
+            <div class="usuario" id="usuario">
+                <a href="../login.html">Entrar</a>
+                <a href="../cadastro.html">Cadastrar</a>
+            </div>
+            <div class="usuario-online" id="usr_online">
+                <a onclick="fn_menu_usuario()">
+                    <img src="../img/user-solaire.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Historia.html" class="atual">História</a></li>
+                    <a href="../Suporte.html" id="no_log_contact">Suporte</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lore">
+        <div class="full-lores">
+            <div class="title">
+                <h1>Demon's Souls</h1>
+            </div>
+            <div class="details">
+                <span>The world was once victim to a previous scourge of Demons in an ancient past before King
+                    Allant
+                    came to the throne. The Old One, an entity of unfathomable power, had awakened the bane of
+                    existence
+                    into the world, unleashing terrible Demons that ripped the land asunder, consequently
+                    exterminating
+                    half of humankind. Those that would become the Monumentals sought to spare the land from further
+                    harm, and combined with their knowledge of Soul Arts, returned the Old One back to its slumber.
+                    To
+                    divide the lands amidst different regions and to return life to where there was none, they
+                    ordered
+                    Archstones be constructed and placed throughout the world, all of which were connected to a
+                    central
+                    Archstone used for inter-regional travel.
+                    <br>
+                    <br>
+                    <br>
+                    Amidst the realm of reality and death exists a place known as the Nexus, a hub for the souls who
+                    traverse the ethereal worlds hoping to reclaim their bodies. Below the Nexus sleeps the Old One,
+                    offering the promise of limitless prosperity to any that gives him or herself up to it. King
+                    Allant
+                    the XII of Boletaria dreamed of bringing eternal wealth to his mighty kingdom, and thus gave
+                    himself
+                    wholly to the Old One's will, awakening it from its long slumber. Prosperity did not befall
+                    Boletaria, but instead the colorless fog of chaos and calamity blanketed the lands, and those
+                    still
+                    living were soon no longer among the sane.
+                    <br>
+                    <br>
+                    <br>
+                    The many former-citizens of Boletaria once prayed to God to grant them divinity in life. Among
+                    the
+                    most notable figureheads of the Kingdom's parish were Saint Urbain, a highly respected man of
+                    great
+                    spiritual knowledge and an abundance of faith, and the Sixth Saint Astraea, a divine Maiden
+                    worshipped for her purity. Urbain's followers revered him as being in direct communion with God,
+                    and
+                    through him they believed His message was delivered. It is Urbain's belief that the Demons were
+                    placed into Boletaria, and the fog consumed the Kingdom, as a test from God, and that all must
+                    use
+                    His miracles to banish the soul-thirsty horde.</span>
+            </div>
+        </div>
+        <div class="full-npcs">
+            <div class="title">
+                <h1>Friendly NPCs</h1>
+            </div>
+            <div class="npc-details">
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Maiden in Black</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/1a16003364a6de0cd4e524f5c70b9eae.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Stockpile Thomas</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/stockpile-thomas-large.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>The Monumental</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/maxresdefault.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="full-npcs">
+            <div class="title">
+                <h1>Bosses</h1>
+            </div>
+            <div class="npc-details">
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Fool's Idol</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/Fool's idol.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Maiden Astraea</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/maxresdefault (1).jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Flamelurker</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/demonssouls04.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="full-npcs">
+            <form>
+                <div class="user-point">
+                    <div class="user-type">
+                        <div class="user-container">
+                            <div class="container-img">
+                                <img src="../img/user-solaire.png" alt="" class="img-user">
+                                <span id="topic_user"></span>
+                                <span id="register_user" display="none">Not a user? <a href="../cadastro.html" class="atual">Sign in</a></span>
+                            </div>
+                            <div class="content-editable">
+                                <textarea name="" id="" cols="60" rows="10" placeholder="Acrescente um tópico para esta discussão"></textarea>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="submit" value="Acrescentar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> -->
+        <div class="popup-menu" id="menu_user">
+            <div class="container-popup">
+                <div class="popup-image">
+                    <a href="../perfil.html">
+                        <img src="../img/user-solaire.png" alt="">
+                    </a>
+                    <div class="username">
+                        <b id="usr_nome"></b>
+                    </div>
+                </div>
+                <div class="options-popup">
+                    <div class="popup-option">
+                        <a href="../perfil.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="personIconTitle" stroke="#ffffff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                                <title id="personIconTitle">Person</title>
+                                <path
+                                    d="M4,20 C4,17 8,17 10,15 C11,14 8,14 8,9 C8,5.667 9.333,4 12,4 C14.667,4 16,5.667 16,9 C16,14 13,14 14,15 C16,17 20,17 20,20" />
+                            </svg>
+                            <span>Geral</span>
+                        </a>
+                    </div>
+                    <div class="popup-option">
+                        <a href="../configuracoes.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="settingsIconTitle" stroke="#fff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#fff">
+                                <title id="settingsIconTitle">Settings</title>
+                                <path
+                                    d="M5.03506429,12.7050339 C5.01187484,12.4731696 5,12.2379716 5,12 C5,11.7620284 5.01187484,11.5268304 5.03506429,11.2949661 L3.20577137,9.23205081 L5.20577137,5.76794919 L7.9069713,6.32070904 C8.28729123,6.0461342 8.69629298,5.80882212 9.12862533,5.61412402 L10,3 L14,3 L14.8713747,5.61412402 C15.303707,5.80882212 15.7127088,6.0461342 16.0930287,6.32070904 L18.7942286,5.76794919 L20.7942286,9.23205081 L18.9649357,11.2949661 C18.9881252,11.5268304 19,11.7620284 19,12 C19,12.2379716 18.9881252,12.4731696 18.9649357,12.7050339 L20.7942286,14.7679492 L18.7942286,18.2320508 L16.0930287,17.679291 C15.7127088,17.9538658 15.303707,18.1911779 14.8713747,18.385876 L14,21 L10,21 L9.12862533,18.385876 C8.69629298,18.1911779 8.28729123,17.9538658 7.9069713,17.679291 L5.20577137,18.2320508 L3.20577137,14.7679492 L5.03506429,12.7050339 Z" />
+                                <circle cx="12" cy="12" r="1" />
+                            </svg>
+                            <span>Configurações</span>
+                        </a>
+                    </div>
+                    <div class="popup-option">
+                        <a href="../Suporte.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="chatAltIconTitle" stroke="#ffffff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                                <title id="chatAltIconTitle">Chat</title>
+                                <path d="M13,17 L7,21 L7,17 L3,17 L3,4 L21,4 L21,17 L13,17 Z" />
+                            </svg>
+                            <span>Suporte</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="logoff-popup">
+                    <div class="popup-option">
+                        <a href="#" onclick="logoff()">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="exitIconTitle" stroke="#a1261b" stroke-width="1.5"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#a1261b">
+                                <title id="exitIconTitle">Exit</title>
+                                <path d="M18 15l3-3-3-3" />
+                                <path d="M11.5 12H20" />
+                                <path stroke-linecap="round" d="M21 12h-1" />
+                                <path d="M15 4v16H4V4z" />
+                            </svg>
+                            <span>Sair</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
+
+<script>
+    verificar_autenticacao();
+    // topic_user.innerHTML = login_usuario;
+
+    // if(topic_user.innerHTML == "undefined"){
+    //     register_user.style.display = "block";
+    // }else{
+    //     register_user.style.display = "none";
+    // }
+</script>

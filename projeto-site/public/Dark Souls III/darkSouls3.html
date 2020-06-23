@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls III</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../funcoes.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="">
+                    <img src="../img/bonfireic1.png" alt="">
+                    <span>Soul<span class="atual">site</span></span>
+                </a>
+            </div>
+            <div class="search-bar">
+                <div>
+                    <input type="text">
+                    <button>search</button>
+                </div>
+            </div>
+            <div class="usuario" id="usuario">
+                <a href="../login.html">Entrar</a>
+                <a href="../cadastro.html">Cadastrar</a>
+            </div>
+            <div class="usuario-online" id="usr_online">
+                <a onclick="fn_menu_usuario()">
+                    <img src="../img/user-solaire.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Historia.html" class="atual">História</a></li>
+                    <a href="../Suporte.html" id="no_log_contact">Suporte</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lore">
+        <div class="full-lores">
+            <div class="title">
+                <h1>Dark Souls III</h1>
+            </div>
+            <div class="details">
+                <span>
+                    "Only in truth the lords will abandon their thrones and the unkindled will rise. Nameless
+                    accursed undead, unfit even to be cinder. And so it is, that ash seeketh embers."
+                    <br>
+                    "They say these are the remains of a saint who cast himself into the bonfire. But we will never
+                    know for sure, for soot and ashes tell no story."
+                    <br>
+                    As the intro says, the Unkindled are beings of ash, unworthy to ascend to become Lords of
+                    Cinder. They are awakened by the tolling of a bell that rings when the First Flame is in danger
+                    of fading. They awaken in the Cemetery of Ash and seek the embers of the First Flame. During the
+                    whole game the protagonist is called Unkindled, Champion of Ash or Ashen One all of which harken
+                    back to the origins of the unkindled.
+                    <br>
+                    There are some speculations about what it means to be Unkindled. First of all, upon killing
+                    certain unkindled NPCs they drop ashes, meaning they were burned at some point before reviving.
+                    Thus Unkindled are perhaps either related to the bornfire creation process, or they are nameless
+                    Accursed undead who linked the First Flame but died in the process. The Lords of Cinder, on the
+                    other hand, were beings so powerful they did survive the linking and turned into Cinder instead
+                    of mere Ash.
+                    <br>
+                    The first hint supporting this theory is a play between the words Cinder and Ash. The latter
+                    refers to what remains after a material has been burnt completely while Cinder means that it has
+                    not been consumed completely. The Undead throw themselves in the bonfire and fuel the Flame but
+                    they are entirely consumed in the process, leaving only ashes that need embers to ignite. These
+                    ashes are found numerous times throughout the journey of the game, implying the cyclical nature
+                    of Dark and Flame. The intro sentence "Ash seeketh embers" takes shape now. Embers in the game
+                    are defined as:
+                    <br>
+                    "No Unkindled can ever truly claim the embers that burn within a champion’s bosom, which is
+                    precisely what makes their yearning for warmth so keen. Gain the strength of flame and increase
+                    max HP until death. With the strength of fire, the summoning signs of Unkindled become visible,
+                    and seekers of embers can be summoned to join in co-operation. But beware the embers may also
+                    attract invaders."
+                    <br>
+                    From DSII we know that many generations passed and many indivuals sacrified themselves to link
+                    the Flame and rekindle the fire. Lords of Cinder, came many generations after, and it is rare
+                    for someone to survive the fire. It seems one must be powerful in a unique way to survive and
+                    even then their form changes. Gwyn was a Lord of Cinder, but it is clear that his form was
+                    changed by the linking and it was a great sacrifice even for one as great as him. A vast amount
+                    of generations passed, we would obviously have many of unkindled and, of course, many amount of
+                    tombs in the Cemetery of Ash. We also fight against a manifestation of all Undead who linked the
+                    fire, that is, the Soul of Cinder, who seems to be good at all fighting styles.
+                    <br>
+                    Another hint supporting that Lords of Cinder did not burn completely and stayed alive after
+                    linking the fire is the fact that all unkindled resurrect with their human forms. All Lords of
+                    Cinder wake up with their charred corpses, like Ludleth, and they all seem to have gained
+                    certain amount of fire power, juding by their boss fights. Aldrich did not die either, he had a
+                    vision of an upcoming Age of the Deep Sea, so he started devouring Gods.
+                    <br>
+                    The last detail relating the Unkindled to all of the previous Undead who sacrified themselves
+                    for the Flame is found in a song. The name of this song is mentioned in the intro of DSIII. when
+                    you beat DSI you see your character burning in the kiln and then The Nameless Song starts to
+                    play. This sad tone is played at the end of your quest and it is what defines your character.
+                    Our characters did everything and died a thousand of times just to be a sacrifice to extend the
+                    age of the gods. It happened many times, and they are nameless, no one is going to remember
+                    their names or write poems about them.
+                    <br>
+                    Whatever unkindled are, their task is clear. They have to seek out the Lords Of Cinder in order
+                    to reenact relinking the First Flame and preserve the age of fire. They are also undead who are
+                    not fully bound by the hollowing process we saw in past games, needing to acquire Dark Sigils in
+                    order to go Hollow.
+                    <br>
+                    The Lords of Cinder
+                    "If the lords will not return to their thrones themselves, let them return as cinders."
+                    <br>
+                    One becomes a Lord of Cinder by relinking the First Flame in the Kiln and Surviving. There are
+                    currently 5 Lords of Cinder, all 5 of their ashes are needed to reenact the Linking of the First
+                    Flame. The 5 Lords are Aldrich Saint of the Deep, Ludleth the Exiled, Yhorm the Giant, Farron's
+                    Undead Legion, and Lothric, the last hope of his line.
+                    <br>
+                    Ludleth the Exiled linked the First Flame long ago by willing himself to. Aldrich was once a
+                    cleric that devoured men. He became so powerful that he was used to relink the Flame. Upon
+                    ascension to a Lord of Cinder, Aldrich sought to devour gods and even gained a cult around him
+                    that formed the Sable Church of the Deep.
+                    <br>
+                    Farron's Undead Legion of Abyss Watchers partook of the blood of an ancient wolf, the Wolf's
+                    blood linked the Abyss watchers to their master, the legendary Artorias of the Abyss. Emulating
+                    Artorias, the Abyss Wachers guard against creatures from the Abyss. The Abyss Watchers swore on
+                    their share Wolf's Blood to relink the Flame.
+                    <br>
+                    Yhorm the Giant sought to end the Profaned flame by relinking the First Flame. Instead of
+                    Eliminating the Profaned Flame, the capital burned killing all except Yhorm. Pontif Sulyvahn
+                    travelled to the Profaned Capital and saw the Profaned Flame. This hints that Yhorm linked the
+                    Flame before Aldrich.
+                    <br>
+                    Lothric refused to relink the Flame, choosing instead to allow the Flame to fade as he watched
+                    it from a distance with his brother.
+                    <br>
+                    <br>
+                    <br>
+                    The Deep
+                    "The deep was originally a peaceful and sacred place, but became the final rest for many
+                    abhorrent things. This tale of the Deep offers protection for those who worship amidst those
+                    horrors."
+                    <br>
+                    "These insects which lurk in the Deep have tiny jaws lined with fangs to tear open the skin and
+                    burrow into the flesh in the blink of an eye, causing intense bleeding."
+                    <br>
+                    "Souls which swell from the deep pursue their target, drawn towards life."
+                    <br>
+                    "A gem of infused titanite. Found in the dregs of the Cathedral of the deep. Used in infusion to
+                    create deep weapons. Deep weapons inflict dark damage, but lose scaling effects. There is a
+                    darkness that lies beyond human ken."
+                    <br>
+                    As stated in the Dark Souls summary, the Abyss was not created until the events that took place
+                    in Oolacile, and it was born after Manus humanity went wild due to torture. Humanity is
+                    described as something warm but at the same time dangerous, so when disturbed it created the
+                    Abyss. Artorias traveled here in order to stop it and it is stated, in his ring, that he made a
+                    pact with the creatures of the abyss not to be corrupted and killed. This part is key because we
+                    are told that humanity is born from the dark soul, which implies darkness. But this darkness is
+                    not inneherntly evil, until it got disturbed, and created the Abyss. The Abyss corrupts
+                    everything and kills everyone but it seems that some creatures inhabit this peculiar place.
+                    <br>
+                    From the descriptions above we can see that the Deep was initially calm but it became a place
+                    for abhorrent creatures. There are insects in the Deep that basically kill all life. The Deep is
+                    Dark, but a Dark that lies beyond humanity, which is also dark. The Deep could be the Abyss.
+                    When Lord Souls are disrupted you create monstruosities. The Witch of Izalith tried to create a
+                    First Flame with her own Lord Soul and she just created Chaos. Oolacile people disrupted a
+                    fragment of the Dark Soul ( Manus) and they created the Abyss.
+                    <br>
+                    A last hint about the nature of the Deep is given by the Farron's Undead Legion boss soul
+                    weapons, the Wolf Knight's Greatsword and the Farron Greatsword, since both swords deal a bonus
+                    damage against Aldrich and the Deacons of the Deep. These weapons are designed to fight against
+                    the abyss, and deal more damage to abyssal foes, hence Aldrich and the Deacons are related to
+                    the Abyss.
+                    <br>
+                    Aldrich, Saint of the Deep
+                    Aldrich is another Lord of Cinder that neglected his duties, having his own ambitions after the
+                    linking of the fire. He was a cleric in the past but at some point he started eating human
+                    flesh, and he sure enjoyed it, as can be seen from Aldrich Ruby or Saphire:
+                    <br>
+                    "Infamous for his appetite for flesh apparently had the desire to share with others his joy of
+                    imbibing the final shudders of life while luxuriating in his victim's screams"
+                    <br>
+                    He is probably the founder of the Cathedral of the Deep, where he got some followers for his
+                    cult, maybe due to fear. His victims were transported from the Undead Settlement to the
+                    Cathedral through the Road of Sacrifices. This is inferred from the Evangelist Set:
+                    <br>
+                    "These teachers, all women, came to enlighten inhabitants of the Undead Settlement and sent
+                    carriers on the path of sacrifice."
+                    <br>
+                    It is also stated that Horace did evade being devoured alive and survived, along with other
+                    children, hinted to be Anri. This hint comes mainly from the fixation of Anri to kill Aldrich
+                    ever since our first encounter, being even a summon. Horace Exceutioner's Armor also tells us
+                    something:
+                    <br>
+                    "Steel armor of Horace the Hushed, who took a liking to its cold, bulky insides. The original
+                    owner was said to be a corrupt executioner, who was killed and stripped of his armor. Horace is
+                    one of only two children to escape Aldrich's clutches."
+                    <br>
+                    At some point the flame started to fade and the Undead curse arose again, so he probably ate
+                    undead humans too. What points this out is the high amount of weak undead bodies outside the
+                    cathedral, bodies that Aldrich did not finish, as the grave warden set seems to suggest:
+                    <br>
+                    "Rotting, tattered skirt, robe, hood and wrap. Attire of grave wardens at the Cathedral of the
+                    Deep. Grave wardens were tasked with disposing of the ever rising corpses that plagued the
+                    cathedral. Their clothes are utterly putrid, drenched in the blood and mucilage of their
+                    undertaking."
+                    <br>
+                    We said before that Aldrich started being a cleric, but then he got corrupted. It is unknown
+                    wether the corruption took place before eating so many humans but he grew (pun intended) fond of
+                    The Abyss. It could be that, after killing so many humans and enjoying the suffering from his
+                    victims while they were being eaten alive, he disrupted a significant amount of the dark soul,
+                    turning himself into an abyss like creature.
+                    <br>
+                    After some time, whoever ruled the kingdom made him link the flame, not for saint but for might,
+                    as Hawkwood tells us. He then had visions of the upcoming age of the Deep Sea so he started
+                    devouring Gods instead. This might have two possible explanations. The age of fire means the age
+                    of Gods, so he would try to get rid of all the gods for one day ruling in an age of dark.
+                    Second, he would need to become something more powerful to survive if The Abyss spreads. Cinders
+                    of a Lord and Soul of Aldrich respectively read:
+                    <br>
+                    " Aldrich became a lord by devouring men, but was disillusioned with his throne, and so took to
+                    devouring gods instead."
+                    <br>
+                    "When Aldrich ruminated on the fading of the fire, it inspired visions of a coming age of the
+                    deep sea. He knew the path would be arduous, but he had no fear. He would devour the gods
+                    himself."
+                    <br>
+                    In any case, he devoured some Gods and linked the fire, then his body of cinder was took to the
+                    tomb. When he awakened he marched from the Cathedral to Anor Londo to have a gift from Sulyvahn,
+                    Gwyndolin. It is possible that when we fight him he is still devouring the god of the darkmoon,
+                    since we still see part of him. If this is right then it means that Priscilla is alive, since he
+                    had a dream about her while devouring Gwyndolin. Darkmoon Longbow and Lifehunt Scythe:
+                    <br>
+                    "Longbow of Darkmoon Gwyndolin, who was gradually devoured by Aldrich.This golden bow is imbued
+                    with powerful magic and is most impressive with Moonlight Arrows."
+                    <br>
+                    "Aldrich dreamt as he slowly devoured the God of the Darkmoon. In this dream, he perceived the
+                    form of a young, pale girl in hiding."
+                    <br>
+                    The Profaned Flame
+                    Profaned Flame wielded by the Irithyllian witches. Lonely Yhorm became a Lord of Cinder to put
+                    the Profaned Flame to rest, knowing full well that those who spoke of him as lord were quite
+                    insincere. The Profaned Capital was consumed by fire after Yhorm the Giant became a Lord of
+                    Cinder. The fire, born of the sky, is said to have incinerated naught but human flesh. The
+                    Profaned Flame was triggered by the curse of these women, relatives of a certain oracle, but
+                    despite their culpability, they went on living, without any cares.
+                    <br>
+                    Coal used for weapon infusion. Remnants of the fire that burned down the Profaned Capital,
+                    preserved in an icy skull. Give to the blacksmith in the shrine to allow the use of gems for
+                    dark, blood, and Hollow infusion.
+                    <br>
+                    The Darksign and the Eclipse
+                    The Darksign is a symbol of the undead. Those cursed with it are reborn after death and
+                    eventually lose their minds and turn hollow. This is a reason why undead are driven from their
+                    homes as they eventually go mad. Horace is a sample of this, originally being a member of the
+                    Blue Sentinals covenant and stated friend of Anri, but later being found attacking anyone he
+                    meets.
+                    <br>
+                    The eclipse appears in Lothric Castle, and several other areas, after Lothric Castle is
+                    unlocked. It may be a sign called by the fading flame, and looks a bit like a Darksign.
+                    *Speculation* Maybe it's calling Undead to link it and prolong its life. Maybe its symbolizing
+                    that the Fire is fading and the Age of Fire is ending.
+                    <br>
+                    <br>
+                    <br>
+                    Multiple Firelink Shrines
+                    <br>
+                    <br>
+                    <br>
+                    "Sword missing from the shrine bonfire. Thrust into the shrine bonfire to restore its power and
+                    enable travel between bonfires. This sword is only bequeathed to chosen ash, as judged by the
+                    Iudex, who awaits the arrival of ash as a scabbard"
+                    <br>
+                    When you start the game you find yourself in the Cemetery of Ash and venture to Firelink Shrine.
+                    In this Firelink Shrine you must insert the Coiled Sword into the bone and ash pile of the
+                    bonfire to be able to use it. When you use the Firelink bonfire to warp to Lothric for the first
+                    time you are warped to an altar with a basin and a broken coiled sword.
+                    <br>
+                    Fragment of the coiled sword of a bonfire which served its purpose long ago. Returns caster to
+                    last bonfire used for resting, or to the bonfire in Firelink Shrine. Can be used repeatedly.
+                    Bonfires are linked to one another irreversibly, retaining their affinity long after their
+                    purpose is exhausted
+                    <br>
+                    Later on in the game you come across an area identical to Firelink called Untended Graves. Here
+                    you find a dark shrine with a Fragment of the Coiled Sword in it.
+                    <br>
+                    Towards the end of the game on your journey to the Kiln, you are warped to one more copy of
+                    Firelink called the Flameless Shrine. The Flameless Shrine is in even worse condition than
+                    Untended Graves and it is here you find a bonfire that warps you to the Kiln.
+                    <br>
+                    <br>
+                    <br>
+                    THEORY 1
+                    <br>
+                    There are three versions of firelink shrine. The first is where we appear, good old fire link,
+                    its filled with friendly npcs, Andre, handmaid, firekeeper...the rest of those lovable guys.
+                    Once the consumed king is defeated, we are given access to an illusory wall that leads us to
+                    untended graves. Suprisingly, this area is a mimic of firelink. Except its consumed by the
+                    abyss, no sky, all blackness. Is this a similar building? No its not. Messages you leave in
+                    firelink will match messages found in the "dark" firelink accessed through untended graves. As
+                    well as items brought over by npcs, like the scrolls of Orbeck, or the pots and goods of
+                    Greirat. It is the same building. But how? Speculation time!
+                    <br>
+                    Time travel. This may sound odd, but forces in souls game have enabled time travel, like the
+                    memory areas in dark souls 2. This dark version is firelink of the present. This is also why you
+                    have to warp to Lothric, or time travel to Lothric by the bonfire as the actually current state
+                    of the bonfire is well, its dead, consumed by the abyss. Im going to speculate harder by
+                    suggesting that time power is how the bonfire heals and why armor is "repaired" when you rest as
+                    well as enemies being resetted. It can reset certain aspects of the world. But its not exactly
+                    reversing everything, as certain things remain changed. This theory has holes as well, activated
+                    levers stay activated, and certain enemies stay killed if killed...etc.
+                    <br>
+                    Anyway, back on topic, still with time travel. So the dark shrine may be our shrine, but in the
+                    future. Ive tried skipping Orbeck and Greirat, just murdering Emma and getting there, and the
+                    scrolls and pots in my previous play through were not there. When I found them, the items they
+                    left stayed there. We even have a corpse of a fire keeper that drops the eyes of a fire keeper,
+                    which is hidden in an illusory wall where the nun would stay. So basically the firelink from the
+                    past is trying to save itself and prevent its current, dark shrine state. As to why the handmaid
+                    is still alive, I have no idea. Maybe she hid with an item, maybe she killed them all. Maybe she
+                    was spared as she is just an old lady.
+                    <br>
+                    Then we have the next flame. The one that takes us to the final boss. Its a ruined version of
+                    firelink, this one is damaged with up with many collapsed pathways. Upon exiting it we find
+                    lothric and a strange dark, sort of night atmosphere. We seem to have a crazy eclipse going on,
+                    and it looks like part of the earth was torn off or ripped out and sent somewhere else. The
+                    Lothric castle has parts of it collapsed and sloped, like some crazy earthquake or event
+                    occured. This could be firelink of the future. Please note that while the dark firelink shrine
+                    is covered in an abyss, the rest of Lothric is fine. This is because the firelink shrine,
+                    birthplace of the powerful fire, is a special ground. Its paranormal. As the fire weakens and
+                    dies, its surrounding area goes to hell. It is swallowed in an abyss and seems to be separated
+                    from the world(dark shrine). This gets worse in the future as now the firelink and its
+                    surrounding area seems to be caught in a crazy cataclysm(final area). Its become some vortex
+                    that sucks its surroundings to where ever it came from, though very slowly. More speculation!
+                    this vortex converges the surrounding lands into the source of the flame. The thing we actually
+                    link. Think of it like this, the fire is hurting and its trying to pull back to safety because
+                    of the pain. as everything converges, the source is revealed, and the champion of ash may
+                    fullfill his duty, link it, prolong its life in our world of plane, and change the future,
+                    extending the age of fire.
+                    <br>
+                    <br>
+                    <br>
+                    THEORY2
+                    <br>
+                    <br>
+                    <br>
+                    That was wild and filled with speculation, sorry bout that, here is a shorter theory! Another
+                    possibility, is a parallel world, an alternate universe of sorts. We know that undead keep
+                    reviving. Hawkwood says it himself that they " cant die properly". But why does Hawkwood die
+                    properly when we kill him? Why does killing Aldrich with Anri, have no influence on the Aldrich
+                    of our world. ( Killing him w Anri will not mean that the one we have to face will be dead, you
+                    have to kill the one in your world, regardless if you helped Anri slay him ). I think to each
+                    undead, the fire presents a "parallel world". Killing an npc will revive them in their world,
+                    but in our world, they will have lost "connection" and appear "dead". Npcs very connected to our
+                    world, like the firekeeper, will revive just like monsters, if killed. All the others are like
+                    other players, with a weaker, sort of temporary connection.
+                    <br>
+                    Anyway, theory two is that the first flame is fading, so fire from other "worlds" all connected
+                    to it, help it out. The first one is the fire that called our particular character from the
+                    cemetary. Hawkwood and Anri were possibly called by different flames from different parallel
+                    worlds. This first flame needs attention as its like the heart of all the other flames, they
+                    need it and stuff. The dark version of firelink shrine is a fire that faded, a possible fate
+                    awaiting the fires of other worlds if the main one isnt fixed. The third one, the "kiln of the
+                    first flame". Is a parallel world that serves as a "doorway" or entrance to the main flame. Its
+                    the world where the power of fire is strongest, and whe whole place is falling apart as the main
+                    one is weakening. We travel there to fix the thing.
+                    <br>
+                    <br>
+                    <br>
+                    The Bell And Resurrection
+                    <br>
+                    <br>
+                    <br>
+                    When the Flame is about to burn out a bell is wrung awakening the Lords of Cinder and the
+                    Unkindled.
+                </span>
+            </div>
+        </div>
+        <div class="full-npcs">
+            <div class="title">
+                <h1>Friendly NPCs</h1>
+            </div>
+            <div class="npc-details">
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Firekeeper</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/Blind_Fire_Keeper.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Sister Friede</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/Sister_Friede_-_02.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Knight Gael</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/Slave_Knight_Gael.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="full-npcs">
+            <div class="title">
+                <h1>Bosses</h1>
+            </div>
+            <div class="npc-details">
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Nameless King</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/357c1f6b60e04b256b73b4bb34ba65cb176706b3_00.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Sister Friede</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/b37e4df5da33e20e0a61150610074d50.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Slave Knigth Gael</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/slave_knight_gael_boss.jpeg" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="full-npcs">
+            <form>
+                <div class="user-point">
+                    <div class="user-type">
+                        <div class="user-container">
+                            <div class="container-img">
+                                <img src="../img/user-solaire.png" alt="" class="img-user">
+                                <span id="topic_user"></span>
+                                <span id="register_user" display="none">Not a user? <a href="../cadastro.html" class="atual">Sign in</a></span>
+                            </div>
+                            <div class="content-editable">
+                                <textarea name="" id="" cols="60" rows="10" placeholder="Acrescente um tópico para esta discussão"></textarea>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="submit" value="Acrescentar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> -->
+        <div class="popup-menu" id="menu_user">
+            <div class="container-popup">
+                <div class="popup-image">
+                    <a href="../perfil.html">
+                        <img src="../img/user-solaire.png" alt="">
+                    </a>
+                    <div class="username">
+                        <b id="usr_nome"></b>
+                    </div>
+                </div>
+                <div class="options-popup">
+                    <div class="popup-option">
+                        <a href="../perfil.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="personIconTitle" stroke="#ffffff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                                <title id="personIconTitle">Person</title>
+                                <path
+                                    d="M4,20 C4,17 8,17 10,15 C11,14 8,14 8,9 C8,5.667 9.333,4 12,4 C14.667,4 16,5.667 16,9 C16,14 13,14 14,15 C16,17 20,17 20,20" />
+                            </svg>
+                            <span>Geral</span>
+                        </a>
+                    </div>
+                    <div class="popup-option">
+                        <a href="../configuracoes.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="settingsIconTitle" stroke="#fff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#fff">
+                                <title id="settingsIconTitle">Settings</title>
+                                <path
+                                    d="M5.03506429,12.7050339 C5.01187484,12.4731696 5,12.2379716 5,12 C5,11.7620284 5.01187484,11.5268304 5.03506429,11.2949661 L3.20577137,9.23205081 L5.20577137,5.76794919 L7.9069713,6.32070904 C8.28729123,6.0461342 8.69629298,5.80882212 9.12862533,5.61412402 L10,3 L14,3 L14.8713747,5.61412402 C15.303707,5.80882212 15.7127088,6.0461342 16.0930287,6.32070904 L18.7942286,5.76794919 L20.7942286,9.23205081 L18.9649357,11.2949661 C18.9881252,11.5268304 19,11.7620284 19,12 C19,12.2379716 18.9881252,12.4731696 18.9649357,12.7050339 L20.7942286,14.7679492 L18.7942286,18.2320508 L16.0930287,17.679291 C15.7127088,17.9538658 15.303707,18.1911779 14.8713747,18.385876 L14,21 L10,21 L9.12862533,18.385876 C8.69629298,18.1911779 8.28729123,17.9538658 7.9069713,17.679291 L5.20577137,18.2320508 L3.20577137,14.7679492 L5.03506429,12.7050339 Z" />
+                                <circle cx="12" cy="12" r="1" />
+                            </svg>
+                            <span>Configurações</span>
+                        </a>
+                    </div>
+                    <div class="popup-option">
+                        <a href="../Suporte.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="chatAltIconTitle" stroke="#ffffff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                                <title id="chatAltIconTitle">Chat</title>
+                                <path d="M13,17 L7,21 L7,17 L3,17 L3,4 L21,4 L21,17 L13,17 Z" />
+                            </svg>
+                            <span>Suporte</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="logoff-popup">
+                    <div class="popup-option">
+                        <a href="#" onclick="logoff()">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="exitIconTitle" stroke="#a1261b" stroke-width="1.5"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#a1261b">
+                                <title id="exitIconTitle">Exit</title>
+                                <path d="M18 15l3-3-3-3" />
+                                <path d="M11.5 12H20" />
+                                <path stroke-linecap="round" d="M21 12h-1" />
+                                <path d="M15 4v16H4V4z" />
+                            </svg>
+                            <span>Sair</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
+
+<script>
+    verificar_autenticacao();
+    // topic_user.innerHTML = login_usuario;
+
+    // if(topic_user.innerHTML == "undefined"){
+    //     register_user.style.display = "block";
+    // }else{
+    //     register_user.style.display = "none";
+    // }
+</script>

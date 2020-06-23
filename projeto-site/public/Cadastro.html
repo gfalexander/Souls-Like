@@ -5,24 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Página com exemplo de Cadastro de usuário</title>
+    <title>Soulsite</title>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-        Nome: <input type="text" name="nome" required minlength="4">
-        <br>
-        Usuário: <input type="text" name="login" required minlength="4">
-        <br>
-        Senha: <input type="password" name="senha" required minlength="4">
-        <br>
-        <button id="btn_entrar">Cadastrar</button>
-    </form>
-    
-    <img src="aguarde.gif" id="img_aguarde" class="img-aguarde">
+    <div class="register-content">
+        <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+            <div class="register-container">
+                <div class="image-register">
+                    <img src="img/default-user.png" alt="">
+                </div>
+                <div class="container-input">
+                    <input type="text" name="nome" required minlength="4" placeholder="Digite seu nome completo">
+                </div>
+                <br>
+                <div class="container-input">
+                    <input type="text" name="login" required minlength="4" placeholder="Digite seu nome de usuario">
+                </div>
+                <br>
+                <div class="container-input">
+                    <input type="password" name="senha" required minlength="4" placeholder="Digite sua senha">
+                </div>
+                <div class="use-terms">
+                    <span>Ao clicar em cadastrar você concorda com os <a href="">Termos de uso</a> de nosso projeto</span>
+                </div>
+                <br>
+                <div class="button-field">
+                    <button id="btn_entrar">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+
+        <img src="aguarde.gif" id="img_aguarde" class="img-aguarde">
+    </div>
 
 </body>
 
@@ -36,10 +54,9 @@
             method: "POST",
             body: formulario
         }).then(function (response) {
-            
-            if (response.ok) {
 
-                window.location.href='login.html';
+            if (response.ok) {
+                window.location.href = 'login.html';
 
             } else {
 
@@ -56,14 +73,12 @@
 
     function aguardar() {
         btn_entrar.disabled = true;
-        img_aguarde.style.display='block';
-        div_erro.style.display='none';
+        img_aguarde.style.display = 'block';
     }
 
     function finalizar_aguardar() {
         btn_entrar.disabled = false;
-        img_aguarde.style.display='none';
-        div_erro.style.display='block';
+        img_aguarde.style.display = 'none';
     }
 
 </script>

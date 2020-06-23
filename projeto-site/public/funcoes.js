@@ -5,6 +5,10 @@ function redirecionar_login() {
     window.location.href = 'login.html';
 }
 
+function redirecionar_login2() {
+    window.location.href = '../login.html';
+}
+
 function verificar_autenticacao() {
     login_usuario = sessionStorage.login_usuario_meuapp;
     nome_usuario = sessionStorage.nome_usuario_meuapp;
@@ -24,7 +28,11 @@ function verificar_autenticacao() {
 function logoff() {
     finalizar_sessao();
     sessionStorage.clear();
-    redirecionar_login();
+    if(window.location.href == "http://localhost:3000/Demon%20Souls/demonsPage.html"){
+        redirecionar_login2();    
+    }else{
+        redirecionar_login();
+    }
     usuario.style.display = 'block';
     usr_online.style.display = 'none';
     no_log_contact.style.display = 'block';

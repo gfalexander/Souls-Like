@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../funcoes.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="">
+                    <img src="../img/bonfireic1.png" alt="">
+                    <span>Soul<span class="atual">site</span></span>
+                </a>
+            </div>
+            <div class="search-bar">
+                <div>
+                    <input type="text">
+                    <button>search</button>
+                </div>
+            </div>
+            <div class="usuario" id="usuario">
+                <a href="../login.html">Entrar</a>
+                <a href="../cadastro.html">Cadastrar</a>
+            </div>
+            <div class="usuario-online" id="usr_online">
+                <a onclick="fn_menu_usuario()">
+                    <img src="../img/user-solaire.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Historia.html" class="atual">História</a></li>
+                    <a href="../Suporte.html" id="no_log_contact">Suporte</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lore">
+        <div class="full-lores">
+            <div class="title">
+                <h1>Dark Souls</h1>
+            </div>
+            <div class="details">
+                <span>
+                    The world of Dark Souls is a world of cycles. Kingdoms rise and fall, ages come and go, and even
+                    time can end and restart as the flame fades and is renewed. These cycles are linked to the First
+                    Flame, a mysterious manifestation of life that divides and defines separate states such as heat
+                    and
+                    cold, or life and death. As the First Flame fades, these differences also begin to fade, such as
+                    life and death having little distinction, and humans becoming Undead. The onset of an Age of
+                    Dark,
+                    the time when the First Flame has fully died, is marked by endless nights, rampant undeath,
+                    time,
+                    space, and reality breaking down, lands collapsing and converging on one another, people
+                    mutating
+                    into monsters, darkness covering the world, and the Gods losing their power. To avoid this and
+                    prolong the Age of Fire, the bearer of a powerful soul must "link" themselves to the First
+                    Flame,
+                    becoming the fuel for another age. If this is not done, the First Flame will eventually die, and
+                    an
+                    Age of Dark will begin.
+                    <br>
+                    <br>
+                    <br>
+                    The powerful Lord Souls were taken from the First Flame, used to defeat the dragons, and then to
+                    establish kingdoms. Souls are inextricably (and inexplicably) linked to fire. Souls are life,
+                    and
+                    life is fire; it stands to reason that souls are fire, as well. Without the First Flame and
+                    without
+                    souls, there is no life. The bearer of a strong soul, called a Lord, who links themselves to the
+                    First Flame, is thus rekindling the flames with their own soul, returning life to it. In the
+                    end,
+                    one could expect that all souls will have been returned to the First Flame, and the Age of Fire
+                    will
+                    have effectively ended anyways.
+                    <br>
+                    <br>
+                    <br>
+                    It is inevitable that people try to find a way around this, another way to continue the Age of
+                    Fire
+                    without making sacrifices, but in every case they fail. In the first Age of Fire, the Witch of
+                    Izalith attempted to create a duplicate of the First Flame using her witchcraft and a special
+                    soul,
+                    but failed catastrophically. Instead of making another First Flame, she had created a twisted
+                    Flame
+                    of Chaos that produced distortions of life, turning herself and all her daughters into demons.
+                    These
+                    demons were malevolent, and wandered the land. Gwyn gathered up his armies and fought the demons
+                    of
+                    Chaos, eventually driving them back and shackling the Bed of Chaos to bind them. Knowing that
+                    the
+                    Age of Fire was nearing its end, under the guidance of the primordial serpent Kingseeker Frampt,
+                    Gwyn offered himself to the First Flame to stave off the Dark. As the flames surged with new
+                    life,
+                    the knights who followed him in were burnt by the flames and now wander the world as the Black
+                    Knights, hollow shells of armor who attack indiscriminately.
+                    <br>
+                    <br>
+                    <br>
+                    Before he left to link the First Flame, Gwyn gave fragments of his soul to his followers and
+                    allies.
+                    Ornstein, Gough, Ciaran, and Artorias, his four strongest knights who fought against the
+                    dragons,
+                    Seath the Paledrake, who betrayed the dragons and played a crucial role in the war, and was also
+                    granted the title of Duke and permission to build a grand archive to conduct his research, and
+                    the
+                    Four Kings of New Londo, who ruled a city of Undead. In time, another primordial serpent
+                    convinced
+                    the people of the human kingdom of Oolacile to delve into the darkness of the Abyss to unearth
+                    the
+                    grave of an ancient human. Whether through their actions or some other means, the primordial
+                    human -
+                    Manus - was resurrected and driven to madness, and his wild Humanity caused the people of
+                    Oolacile
+                    to mutate into abominations. Manus, Father of the Abyss, began to rapidly spread Dark and
+                    accelerate
+                    the growth of the Abyss, and would've started an early Age of Dark had he not been defeated.
+                    Even
+                    so, the kingdom of Oolacile was lost to the Abyss, and eventually forgotten in the modern day.
+                    Nothing remains in the present day to mark the passing of this land save for Dusk, the princess
+                    of
+                    Oolacile.
+                    <br>
+                    <br>
+                    <br>
+                    Gwyn's youngest son Gwyndolin, together with Kingseeker Frampt, sheperds the humans by Gwyn's
+                    command. Together they built giant asylums to house the countless undead, hoping against hope
+                    that
+                    one of them would be chosen to defeat the Asylum demon, and fulfill their destiny. The Undead
+                    are
+                    sent on a quest to ring the Bells of Awakening, collect the Lordvessel, slay the bearers of
+                    Gwynn's
+                    soul, then offer those souls to the Lordvessel to open the path to the Kiln of the First Flame.
+                    In
+                    doing so, the unnatural Undead are given true death and the living can enjoy another age of fire
+                    for
+                    a thousand years, while the Undead linked to the First Flame will continue to burn, alive and
+                    aware,
+                    until someone else comes to take their place. And thus, the cycle continues.
+                </span>
+            </div>
+        </div>
+        <div class="full-npcs">
+            <div class="title">
+                <h1>Friendly NPCs</h1>
+            </div>
+            <div class="npc-details">
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Siegmeyer of Catarina</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/siegmeyer-of-catarina-large.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Princess Gwynevere</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/gwynevere_concept_art_header_full.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Solarie of Astora</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/JsGJ2u7p_400x400.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="full-npcs">
+            <div class="title">
+                <h1>Bosses</h1>
+            </div>
+            <div class="npc-details">
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Knight Artorias</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/af6ad7c0c9960b95ccccbd54f8369d2a.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Crossbreed Priscilla</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/ee9957970d78014e5ca22b6f324d0960f0290e15_00.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Great grey wolf Sif</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/27df1b69c99cd2106543f937cbbcc575.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="full-npcs">
+            <form>
+                <div class="user-point">
+                    <div class="user-type">
+                        <div class="user-container">
+                            <div class="container-img">
+                                <img src="../img/user-solaire.png" alt="" class="img-user">
+                                <span id="topic_user"></span>
+                                <span id="register_user" display="none">Not a user? <a href="../cadastro.html" class="atual">Sign in</a></span>
+                            </div>
+                            <div class="content-editable">
+                                <textarea name="" id="" cols="60" rows="10" placeholder="Acrescente um tópico para esta discussão"></textarea>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="submit" value="Acrescentar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> -->
+        <div class="popup-menu" id="menu_user">
+            <div class="container-popup">
+                <div class="popup-image">
+                    <a href="../perfil.html">
+                        <img src="../img/user-solaire.png" alt="">
+                    </a>
+                    <div class="username">
+                        <b id="usr_nome"></b>
+                    </div>
+                </div>
+                <div class="options-popup">
+                    <div class="popup-option">
+                        <a href="../perfil.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="personIconTitle" stroke="#ffffff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                                <title id="personIconTitle">Person</title>
+                                <path
+                                    d="M4,20 C4,17 8,17 10,15 C11,14 8,14 8,9 C8,5.667 9.333,4 12,4 C14.667,4 16,5.667 16,9 C16,14 13,14 14,15 C16,17 20,17 20,20" />
+                            </svg>
+                            <span>Geral</span>
+                        </a>
+                    </div>
+                    <div class="popup-option">
+                        <a href="../configuracoes.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="settingsIconTitle" stroke="#fff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#fff">
+                                <title id="settingsIconTitle">Settings</title>
+                                <path
+                                    d="M5.03506429,12.7050339 C5.01187484,12.4731696 5,12.2379716 5,12 C5,11.7620284 5.01187484,11.5268304 5.03506429,11.2949661 L3.20577137,9.23205081 L5.20577137,5.76794919 L7.9069713,6.32070904 C8.28729123,6.0461342 8.69629298,5.80882212 9.12862533,5.61412402 L10,3 L14,3 L14.8713747,5.61412402 C15.303707,5.80882212 15.7127088,6.0461342 16.0930287,6.32070904 L18.7942286,5.76794919 L20.7942286,9.23205081 L18.9649357,11.2949661 C18.9881252,11.5268304 19,11.7620284 19,12 C19,12.2379716 18.9881252,12.4731696 18.9649357,12.7050339 L20.7942286,14.7679492 L18.7942286,18.2320508 L16.0930287,17.679291 C15.7127088,17.9538658 15.303707,18.1911779 14.8713747,18.385876 L14,21 L10,21 L9.12862533,18.385876 C8.69629298,18.1911779 8.28729123,17.9538658 7.9069713,17.679291 L5.20577137,18.2320508 L3.20577137,14.7679492 L5.03506429,12.7050339 Z" />
+                                <circle cx="12" cy="12" r="1" />
+                            </svg>
+                            <span>Configurações</span>
+                        </a>
+                    </div>
+                    <div class="popup-option">
+                        <a href="../Suporte.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="chatAltIconTitle" stroke="#ffffff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                                <title id="chatAltIconTitle">Chat</title>
+                                <path d="M13,17 L7,21 L7,17 L3,17 L3,4 L21,4 L21,17 L13,17 Z" />
+                            </svg>
+                            <span>Suporte</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="logoff-popup">
+                    <div class="popup-option">
+                        <a href="#" onclick="logoff()">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="exitIconTitle" stroke="#a1261b" stroke-width="1.5"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#a1261b">
+                                <title id="exitIconTitle">Exit</title>
+                                <path d="M18 15l3-3-3-3" />
+                                <path d="M11.5 12H20" />
+                                <path stroke-linecap="round" d="M21 12h-1" />
+                                <path d="M15 4v16H4V4z" />
+                            </svg>
+                            <span>Sair</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
+
+<script>
+    verificar_autenticacao();
+    // topic_user.innerHTML = login_usuario;
+
+    // if(topic_user.innerHTML == "undefined"){
+    //     register_user.style.display = "block";
+    // }else{
+    //     register_user.style.display = "none";
+    // }
+</script>
