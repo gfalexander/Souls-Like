@@ -58,7 +58,9 @@ function finalizar_sessao() {
 
 function fn_menu_usuario() {
     let teste = menu_user.style.display == "block" ? "none" : "block";
+    let borda = menu_user.style.display == "block" ? "1px solid #262626" : "1px solid #a1261b";
 
     menu_user.style.display = teste;
+    user_box.style.border = borda;
 
 }

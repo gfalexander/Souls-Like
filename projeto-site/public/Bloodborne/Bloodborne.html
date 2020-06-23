@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloodborne</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../funcoes.js"></script>
+    <link rel="shortcut icon" href="../img/bonfireic.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/bonfireic1.png" alt="">
+                    <span>Soul<span class="atual">site</span></span>
+                </a>
+            </div>
+            <!-- <div class="search-bar">
+                <div>
+                    <input type="text">
+                    <button>search</button>
+                </div>
+            </div> -->
+            <div class="usuario" id="usuario">
+                <a href="../login.html">Entrar</a>
+                <a href="../cadastro.html">Cadastrar</a>
+            </div>
+            <div class="usuario-online" id="usr_online">
+                <a onclick="fn_menu_usuario()">
+                    <img src="../img/user-solaire.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Historia.html" class="atual">História</a></li>
+                    <a href="../Suporte.html" id="no_log_contact">Suporte</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="lore">
+        <div class="full-lores">
+            <div class="title">
+                <h1>Bloodborne</h1>
+            </div>
+            <div class="details">
+                <span>
+                    <h3>The Hunters and The Hunt</h3>
+                    <p>
+                        The hunters are a group of warriors who are dedicated to keeping their regions safe by hunting
+                        down beasts - or anything other than beasts if need be - that pose a threat. Hunters are agile
+                        fighters armed with a trick weapon, a transforming melee weapon in the right hand, and a firearm
+                        in the left. They do not employ shields, but rather take advantage of their mobility in order to
+                        avoid attacks. Hunters exist throughout the world and are not exclusive to Yharnam, since a
+                        number of characters such as the protagonist and Eileen come from the outside world and are yet
+                        still recognized as hunters. However, it is believed that the Hunters started out as a branch of
+                        the Healing Church very much like The Choir. This would mean that, at least in Yharnam, Hunters
+                        were recruited by either Gehrman or the Church itself.
+                    </p>
+
+                    <h3>The City of Yharnam</h3>
+                    <p>
+                        Yharnam is a towering, labyrinthine gothic city, home to both the Healing Church and the Blood
+                        Ministrations. As no evidence of the existence of a ruling body is provided in the game, one may
+                        presume that the Healing Church controls the city (at least indirectly). The Church focuses
+                        around healing by infusions of blood. Miraculously, blood healing can repair wounds and cure or
+                        hinder diseases. Yharnam's whole culture became focused on blood, even to the point of
+                        blood-based drinks surpassing alcoholic beverages as the most commonly consumed. Yharnam's
+                        populace is apparently viewed as insane or degenerate by the wider world, and the citizens have
+                        become extremely distrustful of non-natives as a result.
+                    </p>
+
+                    <h3>The Red Moon</h3>
+                    <p>
+                        The Red Moon is a nightmare revealed after slaying Rom, the Vacuous Spider who had placed a veil
+                        over the world to keep the secret of the true nature of the world from its residents. The
+                        servants of Amygdala become fully powered, the beasts become more ravenous, and the children of
+                        Amygdala are visible at last. In this nightmare, the world reveals the Eldritch abominations it
+                        has been truly hiding. As a result, everything gets worse, and the character sees the world as
+                        they would if they had amassed 40 insight. Unfortunately, by killing Rom, you usher in the Red
+                        Moon, which is believed by some to be the coming of Oedon. It is not clear that Oedon is the
+                        Moon Presence, but he very well could be.
+                    </p>
+
+                    <h3>The Umbilical Cords</h3>
+                    <p>
+                        While this presents a weird part of the story, it is a known fact that 75% of the game’s
+                        umbilical cords can be found on women or children. During the Red Moon, Iosefka’s dialogue
+                        suggests that she has become pregnant, and Arianna gets pregnant as well. You also find a cord
+                        from defeating Mergo’s Wet Nurse. This suggests that Oedon impregnates women on the Red Moon.
+                        The criteria of these women who are impregnated has not been determined. It also seems to be
+                        that the Great Ones impregnate women to have surrogate children.
+                    </p>
+                    It is worth noting that one of the four umbilical cords is in the abandoned Workshop, very near the
+                    doll.
+
+                    <h3>The Scourge of the Beast</h3>
+                    <p>
+                        The most common form of the blood sickness appears to be lycanthropy: Humans slowly turning into
+                        wolves. Those in the early stages of the sickness have lengthened canine teeth and grow more
+                        hair. As they progress, their arms and legs lengthen and the spine hunches over and the face
+                        begins to elongate. Eventually, they grow fur and their body finishes the change into a Scourge
+                        Beast. Along with the physical transformation comes a mental degradation: At first the victim
+                        assumes all people they don't know are hostile and they'll attack on sight. As the alterations
+                        progress, the victim becomes more and more savage and hostile, until it can only stand to be
+                        around others exactly like it as "regular" humans appear to be beasts through their own
+                        blood-addled eyes. Sometimes individuals react strangely to the blood; some become unique
+                        beasts, and it's rumored that infected Clerics of the Healing Church become the largest of the
+                        monsters when they succumbed to the madness. (As seen in Laurence, Ludwig, the Vicar Amelia,
+                        etc.)
+                        The blood sickness seems to be endemic to Yharnam, requiring periodic hunts for those very far
+                        gone. The hunters are both respected and feared: They bring down the worst of the beasts, but
+                        are at risk of contamination themselves.
+                    </p>
+
+                    <h3>Old Yharnam, Ashen Blood, and The Powder Kegs</h3>
+                    <p>
+                        Eventually, Old Yharnam was founded (obviously just “Yharnam” at the time), but it was brought
+                        low by a strange (the text says “baffling”) illness known as Ashen Blood, which was a worse form
+                        of slow/fast poison. The antidote description cites it as being a more severe case, and in the
+                        case of Ashen Blood, the antidotes only provided temporary relief. Eventually, the disease
+                        (likely spread due to blood ministrations) took over, and those infected turned into beasts.
+                        This is why the beasts in Old Yharnam are poisonous, particularly the red-eyed werewolf near the
+                        boss, and why the Blood-Starved Beast is coated with poison. After the fall of Old Yharnam, it
+                        was closed up, and Central Yharnam was built, along with the Grand Cathedral. This is perhaps
+                        the first instance of “hunters” as we know them now being formed.
+                        The Powder Kegs were a group of hunters that tried to make explosive weapons, to varying degrees
+                        of success. A few prided creations of the Powdered Kegs are the Stake Driver, the Rifle Spear,
+                        and the Cannon. However, due to differences in designs, they were banned from the Workshop,
+                        becoming known as Workshop Heretics.
+                    </p>
+
+                    <h3>Blood Ministration and The Healing Church</h3>
+                    <p>
+                        Perhaps the most influential of the organizations, the Healing Church was founded in the wake of
+                        the Choir. There were three echelons to the church: black-garbed hunters, white-garbed
+                        “doctors,” and the Choir. Though they did not spring from Byrgenwerth directly, they were
+                        explorers who found the labyrinth in the wake of that place and discovered the same remnants of
+                        the Truth, and used the research done there already to kick off their own research. However,
+                        their form of metamorphosis began with Blood Ministrations and their research/experiments with
+                        the blood.
+                        Master Laurence, the founder of the Healing Church, and one of Master Willem's apprentices
+                        believed that in order to transcend humanity they had to research blood healing using Old Blood.
+                        During the times of Byrgenwerth, Master Willem taught all of his student to blindfold themselves
+                        so that they can "look into oneself" and that they needed to "line their brain with eyes" in
+                        order to see what the Great Ones see and acquire more eldritch knowledge, also known as insight,
+                        to further evolve into greater beings. With insight, they were able to see the world for what it
+                        is, beyond human comprehension. One of the most important of Willem's teachings is the
+                        Byrgenwerth adage "Fear the Old Blood". For only Willem respects and fears the true nature of
+                        the Old Blood in the beginning.
+                        According to the memory shown by the skull in the altar of the Grand Cathedral. Master Laurence
+                        strayed from Master Willem's teachings and their paths eventually diverged. Laurence chose a
+                        different path to use the Old Blood for his experiments in order to move forward, disregarding
+                        the adage "Fear the Old Blood". He then founded the Healing Church and spread the teachings of
+                        the art of Blood Ministration. Later on, as blood healing became more common among the citizens
+                        of Yharnam, some citizens began transforming into beasts. At this point, Master Laurence
+                        discovered his mistake of using Old Blood for when it is mixed with human blood, it transforms
+                        subjects into beast. This is where Yharnam's plague of beast started.
+                        We can tell that Master Laurence deeply regrets his decision of using Old Blood through his
+                        notes around the Lecture Building. These notes also leave clues what one must do to transcend
+                        the hunt, which he later found out after realizing his mistakes. "Master Willem was right.
+                        Evolution without courage will be the ruin of our race". "Hunt the Great ones. Hunt the Great
+                        ones". "Three third Umbilical cords"
+                        From the Caryll Rune Beast: "Beast" is one of the early Caryll Runes. as well as one of the
+                        first to be deemed forbidden. "The discovery of blood entailed the discovery of undesirable
+                        beasts".
+                    </p>
+
+                    <h3>The Choir, The Cosmos and Ebrietas</h3>
+                    <p>
+                        The leaders of the healing church, the Choir differentiate themselves from the rest of the
+                        members of the church as they received teachings directly from Ebrietas. Ebrietas, daughter of
+                        the cosmos is a celestial being who emerged from the depth of the Old Labyrinth and acted as a
+                        source of knowledge to the healing church with seemingly no ill-will thus furthering the notion
+                        that the Great Ones are sympathetic to humans. Not only did Ebrietas grant members of the Choir
+                        profound knowledge, but she also further convinced them that they could commune with the Great
+                        Ones and learn the Eldritch Truth. They believed they could ascend to the Cosmos (or at least
+                        make contact with it), and it came in a sudden and unexpected realization that perhaps while
+                        their feet were rooted to the ground, the cosmos was not immeasurably far away, but right above
+                        their heads. Together with Ebrietas, the Choir worked tirelessly to understand the Great One’s
+                        Truth.
+                    </p>
+
+                    <h3>The School of Mensis and the Mensis Ritual</h3>
+                    <p>
+                        Members of the School of Mensis desperately seek communion with the Great Ones, to the point of
+                        near (if not) insanity. Typically found wearing Mensis cages, a follower of the School of Mensis
+                        could be distinguished from a normal person from a mile away. But they certainly don't care
+                        about other humans' opinions as much as they do the Great Ones'.
+                        Despite sharing the same goal with the Healing Church, the School of Mensis and the Healing
+                        Church do not seem to get along - this is indicated by the corpse of a Choir member locked away
+                        in the Unseen Village, which happens to be founded and controlled by the School of Mensis.
+                        The founder of the School of Mensis, Micolash seems to have telepathic powers, being able to
+                        plant nightmares and illusions into the minds of his victims. This might indicate the School of
+                        Mensis having foul intent if they succeed in communicating with the Great Ones. They may have
+                        turned the knowledge and power they obtained onto the people, which would explain the tension
+                        between them and the Healing Church.
+                        The pertinent Umbilical Cord for the School of Mensis' description reads as follows after
+                        obtaining it from Murgo's Wet Nurse in the Nightmare: "Every Great One loses its child, and then
+                        yearns for a surrogate. This Cord granted Mensis audience with Mergo, but resulted in the
+                        stillbirth of their brains." When Micolash and his ilk used this cord to commune with The Infant
+                        Great One, they discovered that the power was too much and it killed the whole School of Mensis,
+                        locking the survivors in the Nightmare Realm that Micolash controls and driving them all insane.
+                        Whether or not this was intended by Mergo is up for debate
+                    </p>
+
+                    <h3>Cainhurst, The Vilebloods, and the Executioners</h3>
+                    <p>
+                        In Cainhurst Castle, Queen Annalise was a ruler over many nobles and dandies, the first
+                        Vileblood that partook in corrupted blood from Byrgenwerth. Having the ability to extract the
+                        essence of hunters' blood, Queen Annalise ordered her followers to hunt down hunters without
+                        scruple, and gained notoriety for her insatiable hunger for blood.
+                        Annalise consumed the blood offerings brought back by her servants, and eventually became
+                        immortal due to her vile predations. A timeless society of vampire-like entities was formed in
+                        Cainhurst Castle thereafter. It was a place of refinement and sophistication, and the occasional
+                        beast that arose from the foul practice was dispatched discreetly as well as gracefully - such
+                        is the Cainhurst way. Those who served the queen did so out of loyalty, fear, and an unending
+                        desire to taste her blood, and settled with various Caryll runes that improved Visceral Attacks
+                        as a cheap substitute (as described in the rune’s texts). Queen Annalise hoped desperately one
+                        day to bear a true heir, and dubbed this the Child of Blood, which she sought to have at all
+                        costs. She sent her Vilebloods to hunt for her, and all hoped that, with enough blood dregs, she
+                        could birth a Child of Blood.
+                        However, the justice-seeking knight commander known as master Logarius took these practices as
+                        an affront, and founded the Executioners: blood-thirsty zealots looking to kill Vilebloods at
+                        all costs. Eventually they stormed Cainhurst castle, eliminating everyone inside with extreme
+                        prejudice. Ironically, the executioners slew all the maids they could find, who likely had
+                        nothing to do with Annalise's malevolence, but could not harm Annalise due to her immortality.
+                        Seeing no other option, master Logarius sent his Executioners away and martyred himself in order
+                        to prevent Annalise from ever escaping. He stands guard in front of Annalise's tower forever,
+                        sealed off with the Crown of Illusion, so that none could enter again.
+                    </p>
+
+                    <h3>The Great Ones</h3>
+                    <p>
+                        The Healing Church has pursued a strange goal for a long, long time; a goal that has been hidden
+                        from all but the highest of rank among them: to summon or harness the power of the Great Ones,
+                        beings not of this world, powerful enough to be seen as gods. They were here, in the labyrinth,
+                        long ago. They appear to be much closer than you'd think at Byrgenwerth, men were sent into the
+                        labyrinth, and an academy was built to understand the strange discoveries inside, generally
+                        called the Truth. It seems the Truth is a terrible thing, slowly breaking the mind of anyone who
+                        delves too deeply. Awful things happened at Bygenwerth, and as a result, the church closed off
+                        not only the academy, but the entire forest, calling it "forbidden".
+                        Whether or not the Great Ones are actually gods or just higher levels of beings is
+                        inconsequential, the question itself is entirely academic. The important thing is: They exist.
+                        They have an influence on the world. They appear to be ageless, but they can be killed. Their
+                        powers are strange things, often involving teleportation or energy or things that the human
+                        world cannot do. Even perceiving the Great Ones properly requires great amounts of
+                        Insight--something Master Willem tried to do, at his own cost. The strongest of the Great Ones
+                        appears to be the Moon Presence, the creator of the Nightmare the Hunter is trapped within.
+                        Others are Oedon, Rom, Mergo's Wet Nurse, Amygdala, the Celestial Emissary, the Brain of Mensis,
+                        and Ebrietas.
+                        Oedon, one of their number, has transcended even the others, to the point that he no longer has
+                        a physical body but instead is just a voice and an influence. He is very powerful and has become
+                        sort of "timeless", thus potentially making him the most powerful, yet the most indirect, of the
+                        Great Ones. He is also the only Great One explicitly referred to as male, with all the others'
+                        genders either female or undefined (assuming the Great Ones even have humanly-definable genders)
+                        Some items' descriptions tell about Great Ones living in "The Dream" and others living in "The
+                        Nightmare" (Which is the case of Amygdala whose function is still to be defined, and Mergo's Wet
+                        Nurse). Humans have been able to contact them through the use of Phantasm, little invertebrates
+                        found in the Labyrinth.
+                        Interestingly, Mergo's Wet Nurse and the Moon Presence are themselves never directly identified
+                        as Great Ones. Whether this is merely an oversight or an indication that they are indeed a
+                        different class of being is unknown.
+                    </p>
+
+                    <h3>Pthumerian civilization</h3>
+                    <p>
+                        Pthumeria was an ancient civilization ruled by Queen Yharnam. It was populated by Pthumerians,
+                        an ancient race of people who truly understood the Truth of the Great Ones and gained
+                        supernatural powers as a result. Queen Yharnam was a medium for the Great Ones, as cited by an
+                        item (saying the Choir discovered a medium, though she’s the only likely candidate). Eventually
+                        the Pthumerians retreated into a deep labyrinth, with their holy chalices being the only
+                        remnants of their ancient rituals to break the seals. Some chalices (such as the ailing Loran
+                        chalice) led to other lands, and the Isz Chalice was in particular used in holy communion with
+                        the Great Ones.
+                    </p>
+                </span>
+            </div>
+        </div>
+        <div class="full-npcs">
+            <div class="title">
+                <h1>Friendly NPCs</h1>
+            </div>
+            <div class="npc-details">
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Gehrman</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/gehrman_499x281_low.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Young girl and Older sister</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/Yharnam_Girl_Lamp.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Blood Minister</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/blood_minister.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="full-npcs">
+            <div class="title">
+                <h1>Bosses</h1>
+            </div>
+            <div class="npc-details">
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Father Gascoigne</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/Gascoigne_Frontal_R.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Vigar Amelia</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/80.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="maiden-npc">
+                        <div class="name">
+                            <h3>Darkbeast Paarl</h3>
+                        </div>
+                        <div class="image">
+                            <img src="../img/paarl.jpg" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="full-npcs">
+            <form>
+                <div class="user-point">
+                    <div class="user-type">
+                        <div class="user-container">
+                            <div class="container-img">
+                                <img src="../img/user-solaire.png" alt="" class="img-user">
+                                <span id="topic_user"></span>
+                                <span id="register_user" display="none">Not a user? <a href="../cadastro.html" class="atual">Sign in</a></span>
+                            </div>
+                            <div class="content-editable">
+                                <textarea name="" id="" cols="60" rows="10" placeholder="Acrescente um tópico para esta discussão"></textarea>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <input type="submit" value="Acrescentar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> -->
+        <div class="popup-menu" id="menu_user">
+            <div class="container-popup">
+                <div class="popup-image">
+                    <a href="../perfil.html">
+                        <img src="../img/user-solaire.png" alt="">
+                    </a>
+                    <div class="username">
+                        <b id="usr_nome"></b>
+                    </div>
+                </div>
+                <div class="options-popup">
+                    <div class="popup-option">
+                        <a href="../perfil.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="personIconTitle" stroke="#ffffff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                                <title id="personIconTitle">Person</title>
+                                <path
+                                    d="M4,20 C4,17 8,17 10,15 C11,14 8,14 8,9 C8,5.667 9.333,4 12,4 C14.667,4 16,5.667 16,9 C16,14 13,14 14,15 C16,17 20,17 20,20" />
+                            </svg>
+                            <span>Geral</span>
+                        </a>
+                    </div>
+                    <div class="popup-option">
+                        <a href="../configuracoes.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="settingsIconTitle" stroke="#fff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#fff">
+                                <title id="settingsIconTitle">Settings</title>
+                                <path
+                                    d="M5.03506429,12.7050339 C5.01187484,12.4731696 5,12.2379716 5,12 C5,11.7620284 5.01187484,11.5268304 5.03506429,11.2949661 L3.20577137,9.23205081 L5.20577137,5.76794919 L7.9069713,6.32070904 C8.28729123,6.0461342 8.69629298,5.80882212 9.12862533,5.61412402 L10,3 L14,3 L14.8713747,5.61412402 C15.303707,5.80882212 15.7127088,6.0461342 16.0930287,6.32070904 L18.7942286,5.76794919 L20.7942286,9.23205081 L18.9649357,11.2949661 C18.9881252,11.5268304 19,11.7620284 19,12 C19,12.2379716 18.9881252,12.4731696 18.9649357,12.7050339 L20.7942286,14.7679492 L18.7942286,18.2320508 L16.0930287,17.679291 C15.7127088,17.9538658 15.303707,18.1911779 14.8713747,18.385876 L14,21 L10,21 L9.12862533,18.385876 C8.69629298,18.1911779 8.28729123,17.9538658 7.9069713,17.679291 L5.20577137,18.2320508 L3.20577137,14.7679492 L5.03506429,12.7050339 Z" />
+                                <circle cx="12" cy="12" r="1" />
+                            </svg>
+                            <span>Configurações</span>
+                        </a>
+                    </div>
+                    <div class="popup-option">
+                        <a href="../Suporte.html">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="chatAltIconTitle" stroke="#ffffff" stroke-width="1"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#ffffff">
+                                <title id="chatAltIconTitle">Chat</title>
+                                <path d="M13,17 L7,21 L7,17 L3,17 L3,4 L21,4 L21,17 L13,17 Z" />
+                            </svg>
+                            <span>Suporte</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="logoff-popup">
+                    <div class="popup-option">
+                        <a href="#" onclick="logoff()">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
+                                viewBox="0 0 24 24" aria-labelledby="exitIconTitle" stroke="#a1261b" stroke-width="1.5"
+                                stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#a1261b">
+                                <title id="exitIconTitle">Exit</title>
+                                <path d="M18 15l3-3-3-3" />
+                                <path d="M11.5 12H20" />
+                                <path stroke-linecap="round" d="M21 12h-1" />
+                                <path d="M15 4v16H4V4z" />
+                            </svg>
+                            <span>Sair</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
+
+<script>
+    verificar_autenticacao();
+    // topic_user.innerHTML = login_usuario;
+
+    // if(topic_user.innerHTML == "undefined"){
+    //     register_user.style.display = "block";
+    // }else{
+    //     register_user.style.display = "none";
+    // }
+</script>

@@ -206,6 +206,12 @@ height: 15px;
     height: 323px;
 }
 
+.content-lores:hover{
+    border: 1px solid #a1261b;
+    background-color: #212121;
+    cursor: pointer;
+}
+
 .souls-lore{
     width: 60%;
     float: left;
@@ -584,3 +590,11 @@ height: 15px;
     color: inherit;
     padding: 10px;
 } */
+
+
+.content-form input, .content-form textarea{
+    background: transparent;
+    color: inherit;
+    border: 1px solid #a1261b;
+    outline: none;
+}
